@@ -1,0 +1,11 @@
+@include media-breakpoint-down(sm) {
+  .section-footer {
+    .footer.bg-transparent {
+      .copyrights {
+        position: initial;
+        margin: 20px;
+      }
+    }
+  }
+}
+

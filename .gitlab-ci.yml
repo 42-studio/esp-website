@@ -1,0 +1,62 @@
+# CI Setup
+stages:
+  - build
+  - test
+  - release
+
+variables:
+
+  # Container Image Tags
+  LOCAL_COMMIT_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG-$CI_COMMIT_SHORT_SHA
+  LOCAL_REF_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  AWS_REF_TAG: $AWS_ECR_URL/$AWS_ECR_REPO:$CI_COMMIT_REF_SLUG
+
+  # Docker Build Arguments
+  COMMIT_INFO: $CI_COMMIT_REF_SLUG-$CI_COMMIT_SHORT_SHA
+  CI_COMMIT_TIMESTAMP: $CI_COMMIT_TIMESTAMP
+
+before_script:
+  - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+
+# Build
+# Only runs on master, develop and version tags see rule regex below
+build:
+  stage: build
+  rules:
+    - if: '$CI_COMMIT_REF_SLUG =~ /^master$|^develop$|^v\d.+$/'
+  tags:
+    - local
+    - shell
+  script:
+    - docker build
+      --build-arg CI_SERVER_URL=$CI_SERVER_URL
+      --build-arg CI_PROJECT_ID=$CI_PROJECT_ID
+      --build-arg CI_JOB_TOKEN=$CI_JOB_TOKEN
+      --build-arg COMMIT_INFO=$COMMIT_INFO
+      --build-arg CI_COMMIT_TIMESTAMP=$CI_COMMIT_TIMESTAMP
+      -t $LOCAL_COMMIT_TAG -t $LOCAL_REF_TAG .
+
+# Testing
+# Only runs on master, develop and version tags see rule regex below
+test:
+  stage: test
+  rules:
+    - if: '$CI_COMMIT_REF_SLUG =~ /^master$|^develop$|^v\d.+$/'
+  tags:
+    - local
+    - shell
+  script:
+    - docker run --rm $LOCAL_COMMIT_TAG nginx -t
+
+# Local Container Release
+# Only runs on master, develop and version tags see rule regex below
+local-release:
+  stage: release
+  rules:
+    - if: '$CI_COMMIT_REF_SLUG =~ /^master$|^develop$|^v\d.+$/'
+  tags:
+    - local
+    - shell
+  script:
+    - docker push $LOCAL_REF_TAG
+    - docker push $LOCAL_COMMIT_TAG
