@@ -29,52 +29,52 @@
 
     <node-scene />
 
-    <!--    <div class="info-graphic">-->
+       <!-- <div class="info-graphic">
 
-    <!--      <div class="info info-1">-->
-    <!--        <div class="icon icon-lg icon-shape rounded-circle">-->
-    <!--          <i class="fa fa-user" />-->
-    <!--        </div>-->
-    <!--        <div class="text-center">-->
-    <!--          <h3>-->
-    <!--            Control Dependency Mapping-->
-    <!--          </h3>-->
-    <!--          <p class="load">-->
-    <!--            Understanding what your security assets provide, their dependencies, and how much they cost against-->
-    <!--            threat-centric frameworks.-->
-    <!--            We have developed a standardized model for capturing and quantifying this information.-->
-    <!--          </p>-->
-    <!--        </div>-->
-    <!--      </div>-->
+         <div class="info info-1">
+           <div class="icon icon-lg icon-shape rounded-circle">
+             <i class="fa fa-user" />
+           </div>
+           <div class="text-center">
+             <h3>
+               Control Dependency Mapping
+             </h3>
+             <p class="load">
+               Understanding what your security assets provide, their dependencies, and how much they cost against
+               threat-centric frameworks.
+               We have developed a standardized model for capturing and quantifying this information.
+             </p>
+           </div>
+         </div>
 
-    <!--      <div class="info info-2">-->
-    <!--        <div class="icon icon-lg icon-shape rounded-circle">-->
-    <!--          <i class="fa fa-user" />-->
-    <!--        </div>-->
-    <!--        <div class="text-center">-->
-    <!--          <h3>Threat Intelligence</h3>-->
-    <!--          <p class="load">-->
-    <!--            The threat landscape is constantly evolving over time and so should your investment and strategy.-->
-    <!--            Security assets that once satisfied risk appetite might no longer be relevant against current threat-->
-    <!--            intelligence.-->
-    <!--          </p>-->
-    <!--        </div>-->
-    <!--      </div>-->
+         <div class="info info-2">
+           <div class="icon icon-lg icon-shape rounded-circle">
+             <i class="fa fa-user" />
+           </div>
+           <div class="text-center">
+             <h3>Threat Intelligence</h3>
+             <p class="load">
+               The threat landscape is constantly evolving over time and so should your investment and strategy.
+               Security assets that once satisfied risk appetite might no longer be relevant against current threat
+               intelligence.
+             </p>
+           </div>
+         </div>
 
-    <!--      <div class="info info-3">-->
-    <!--        <div class="icon icon-lg icon-shape rounded-circle">-->
-    <!--          <i class="fa fa-user" />-->
-    <!--        </div>-->
-    <!--        <div class="text-center">-->
-    <!--          <h3>Environmental Telemetry</h3>-->
-    <!--          <p class="load">-->
-    <!--            Every enterprise is unique. Capturing telemetry across your incidents, breach assessments,-->
-    <!--            and more to enable evidence-based validation of control posture.-->
-    <!--          </p>-->
-    <!--        </div>-->
-    <!--      </div>-->
+         <div class="info info-3">
+           <div class="icon icon-lg icon-shape rounded-circle">
+             <i class="fa fa-user" />
+           </div>
+           <div class="text-center">
+             <h3>Environmental Telemetry</h3>
+             <p class="load">
+               Every enterprise is unique. Capturing telemetry across your incidents, breach assessments,
+               and more to enable evidence-based validation of control posture.
+             </p>
+           </div>
+         </div>
 
-    <!--    </div>-->
+       </div> -->
 
   </div>
 

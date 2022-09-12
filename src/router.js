@@ -27,57 +27,66 @@ export default new Router({
         footer: LayoutFooter
       }
     },
-    {
-      path: '/products/esp-platform',
-      name: 'product.esp-platform',
-      components: {
-        header: LayoutHeader,
-        default: () => import('./views/products/esp-platform'),
-        footer: LayoutFooter
-      }
-    },
-    {
-      path: '/products/exchange',
-      name: 'product.exchange',
-      components: {
-        header: LayoutHeader,
-        default: () => import('./views/products/exchange'),
-        footer: LayoutFooter
-      }
-    },
-    {
-      path: '/products/cdm-builder',
-      name: 'product.cdm.builder',
-      components: {
-        header: LayoutHeader,
-        default: () => import('./views/products/cdm-builder'),
-        footer: LayoutFooter
-      }
-    },
-    {
-      path: '/solutions',
-      name: 'solutions.overview',
-      components: {
-        header: LayoutHeader,
-        default: () => import('./views/solutions/overview'),
-        footer: LayoutFooter
-      }
-    },
-    {
-      path: '/solutions/cdm-schema',
-      name: 'solutions.cdm.schema',
-      components: {
-        header: LayoutHeader,
-        default: () => import('./views/solutions/cdm-schema'),
-        footer: LayoutFooter
-      }
-    },
+    // {
+    //   path: '/products/esp-platform',
+    //   name: 'product.esp-platform',
+    //   components: {
+    //     header: LayoutHeader,
+    //     default: () => import('./views/products/esp-platform'),
+    //     footer: LayoutFooter
+    //   }
+    // },
+    // {
+    //   path: '/products/exchange',
+    //   name: 'product.exchange',
+    //   components: {
+    //     header: LayoutHeader,
+    //     default: () => import('./views/products/exchange'),
+    //     footer: LayoutFooter
+    //   }
+    // },
+    // {
+    //   path: '/products/cdm-builder',
+    //   name: 'product.cdm.builder',
+    //   components: {
+    //     header: LayoutHeader,
+    //     default: () => import('./views/products/cdm-builder'),
+    //     footer: LayoutFooter
+    //   }
+    // },
+    // {
+    //   path: '/solutions',
+    //   name: 'solutions.overview',
+    //   components: {
+    //     header: LayoutHeader,
+    //     default: () => import('./views/solutions/overview'),
+    //     footer: LayoutFooter
+    //   }
+    // },
+    // {
+    //   path: '/solutions/cdm-schema',
+    //   name: 'solutions.cdm.schema',
+    //   components: {
+    //     header: LayoutHeader,
+    //     default: () => import('./views/solutions/cdm-schema'),
+    //     footer: LayoutFooter
+    //   }
+    // },
     {
       path: '/about/our-story',
       name: 'about.story',
       components: {
         header: LayoutHeader,
         default: () => import('./views/about/Story'),
+        footer: LayoutFooter
+      }
+    },
+    {
+      path: '/about/our-team',
+      name: 'about.team',
+      components: {
+        header: LayoutHeader,
+        default: () => import('./views/about/Team'),
         footer: LayoutFooter
       }
     },
