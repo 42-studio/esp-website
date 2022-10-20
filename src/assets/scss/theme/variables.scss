@@ -66,9 +66,12 @@ $colors: map-merge((
         "gray-dark": $gray-800
 ), $colors);
 
+$es-red: #C00027 !default;
+$accent: #160C28 !default;
+
 $default: #264B82 !default;
-$primary: #384062 !default;
-$secondary: #f4f5f7 !default;
+$primary: #AD0326 !default;
+$secondary: #7F0014 !default;
 $success: $green !default;
 $info: $teal !default;
 $warning: $orange !default;
