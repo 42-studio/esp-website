@@ -1,27 +1,19 @@
 <template>
   <header>
-    <base-nav
-      class="navbar-main"
-      id="navbar-main"
-      type="transparent"
-      effect="dark"
-      expand
-    >
-      <template v-slot:brand class="left">
+    <base-nav id="navbar-main" type="transparent" effect="dark" expand>
+      <template v-slot:brand>
         <router-link to="/" class="navbar-brand mr-lg-5">
           <brand-logo />
         </router-link>
       </template>
 
-      <template v-slot:content-header="{ closeMenu }" class="right">
+      <template v-slot:content-header="{ closeMenu }">
         <b-link @click="closeMenu">
           <i class="fa fa-times text-white" />
         </b-link>
       </template>
 
-      <ul
-        class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto right"
-      >
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
         <li class="nav-item">
           <router-link :to="{ name: 'index' }" custom v-slot="{ navigate }">
             <b-button
@@ -77,9 +69,9 @@
 
         <li class="nav-item">
           <router-link :to="{ name: 'schedule.demo' }">
-            <b-button variant="outline-white">
-              Schedule A Demo
-            </b-button>
+            <button class="button">
+              Schedule a Demo
+            </button>
           </router-link>
         </li>
       </ul>
@@ -88,17 +80,48 @@
 </template>
 
 <style lang="scss">
-.navbar-main {
+header {
+  z-index: 10;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   padding: 0 200px;
-  display: flex;
-  flex-direction: row;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(22, 12, 40, 0.6);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 12, 40, 1) 0%,
+    rgba(22, 12, 40, 0.5) 78%,
+    rgba(22, 12, 40, 0) 100%
+  );
 }
 
-.left {
-  align-self: flex-start;
+.button {
+  width: 200px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  border-radius: 52px !important;
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+  text-align: unset;
+
+  transition: all 200ms ease;
 }
-.right {
-  align-self: flex-end;
+
+.button:hover {
+  background-color: var(--primary);
+  transform: scale(1.05);
 }
 </style>
 

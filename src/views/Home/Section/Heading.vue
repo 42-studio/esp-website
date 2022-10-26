@@ -17,22 +17,21 @@
               solutions with consumer’s threat informed defence through
               threat-centric methodology.
             </p>
-
-            <div
-              class="button"
-              @click="$router.push({ name: 'schedule.demo' })"
-            >
-              Book a Demo
-            </div>
+            <router-link :to="{ name: 'schedule.demo' }">
+              <button>
+                Book a Demo
+              </button>
+            </router-link>
           </div>
-
-          <img
-            class="intro-laptop"
-            src="@/assets/img/previews/macbook.svg"
-            height="100%"
-          />
-          <div class="spotlight"></div>
         </div>
+      </div>
+      <div class="laptop-container">
+        <img
+          class="intro-laptop"
+          src="@/assets/img/previews/macbook.svg"
+          height="100%"
+        />
+        <div class="spotlight"></div>
       </div>
       <div class="see-more">See more<br />⌄</div>
     </div>
@@ -43,13 +42,14 @@
 .introduction {
   position: relative;
   clear: both;
-  padding: 200px 0;
-  padding-left: 200px;
+  padding: 200px;
+  // padding-left: 200px;
 
   .intro-container {
     max-width: 1920px;
     min-height: calc(100vh - 400px);
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .section-content {
@@ -66,9 +66,6 @@
   }
 
   .intro-text {
-    // position: absolute;
-    // top: 20%;
-    // left: 10%;
     max-width: 540px;
     text-align: left;
 
@@ -82,7 +79,7 @@
 
     h3 {
       font-size: 1.3rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--secondary);
     }
 
@@ -95,46 +92,53 @@
     }
   }
 
-  .intro-laptop {
-    // transform: translateX(300px);
-    // max-width: 1280px;
-    // height: 100%;
-    width: 800px;
-    overflow: visible;
-    z-index: 2;
-  }
-
-  .spotlight {
+  .laptop-container {
     position: absolute;
+    right: 0;
     top: 50%;
-    right: 0px;
-    width: 650px;
-    height: 37;
-    border-radius: 50%;
-    background: #5a349d;
-    z-index: -1;
-    box-shadow: 0px 0px 243px 308px rgba(90, 52, 157, 0.5);
+    transform: translate(200px, -50%);
+
+    .intro-laptop {
+      // overflow: hidden;
+      width: 800px;
+      overflow: visible;
+      z-index: 2;
+    }
+
+    .spotlight {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 650px;
+      height: 37;
+      border-radius: 50%;
+      background: #5a349d;
+      z-index: -1;
+      box-shadow: 0px 0px 243px 308px rgba(90, 52, 157, 0.5);
+    }
   }
 
-  .button {
+  button {
     width: 170px;
     height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
     font-weight: 600;
     border-radius: 50px;
     background-color: transparent;
     border: var(--primary) solid 3px;
+    outline: none;
     color: var(--primary);
     text-align: unset;
 
     transition: all 200ms ease;
   }
 
-  .button:hover {
+  button:hover {
     color: white;
     background-color: var(--primary);
     transform: scale(1.1);
@@ -155,46 +159,10 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .introduction {
-    .intro-container {
-      position: relative;
-      top: initial;
-      left: initial;
-      right: initial;
-
-      .section-content {
-        padding-bottom: 5%;
-        padding-top: 10%;
-      }
-    }
-
-    .intro-text {
-      position: relative;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-
-    .intro-laptop {
-      position: relative;
-      top: initial;
-      left: initial;
-      margin: auto;
-      padding-bottom: 5%;
-    }
-
-    .section-video {
-      transform-origin: top left;
-      max-height: initial;
-      height: 100%;
-
-      video {
-        visibility: visible;
-        height: inherit;
-      }
-    }
+@media only screen and (min-width: 1920px) {
+  .laptop-container {
+    right: calc((0px) + 200px) !important;
+    transform: translate(0, -50%) !important;
   }
 }
 
