@@ -87,7 +87,7 @@ header {
   left: 0;
   width: 100%;
 
-  padding: 0 200px;
+  padding: 0 var(--body-padding);
 
   display: flex !important;
   justify-content: center;
@@ -103,15 +103,17 @@ header {
 }
 
 .button {
-  width: 200px;
-  height: 52px;
+  width: 10rem;
+  height: 2.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   font-weight: 600;
+  font-size: 0.9rem;
   border-radius: 52px !important;
   background-color: var(--primary);
+  color: white;
   outline: none;
   border: none;
   text-align: unset;

@@ -1,29 +1,43 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import LayoutHeader from './layout/Header'
-import LayoutFooter from './layout/Footer'
+import Vue from "vue";
+import Router from "vue-router";
+import LayoutHeader from "./layout/Header";
+import LayoutFooter from "./layout/Footer";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
-
+  mode: "history",
+  scrollBehavior: (to, from, savedPosition) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        let res;
+        if (savedPosition) {
+          res = savedPosition;
+        } else if (to.hash) {
+          res = { el: to.hash, behavior: "smooth" };
+        } else {
+          res = { x: 0, y: 0 };
+        }
+        resolve(res);
+      }, 400);
+    });
+  },
   routes: [
     {
-      path: '/',
-      name: 'index',
+      path: "/",
+      name: "index",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/Home/Home'),
+        default: () => import("./views/Home/Home"),
         footer: LayoutFooter
       }
     },
     {
-      path: '/schedule-demo',
-      name: 'schedule.demo',
+      path: "/schedule-demo",
+      name: "schedule.demo",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/ScheduleDemo'),
+        default: () => import("./views/ScheduleDemo"),
         footer: LayoutFooter
       }
     },
@@ -73,84 +87,84 @@ export default new Router({
     //   }
     // },
     {
-      path: '/about/our-story',
-      name: 'about.story',
+      path: "/about/our-story",
+      name: "about.story",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/about/Story'),
+        default: () => import("./views/about/Story"),
         footer: LayoutFooter
       }
     },
     {
-      path: '/about/our-team',
-      name: 'about.team',
+      path: "/about/our-team",
+      name: "about.team",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/about/Team'),
+        default: () => import("./views/about/Team"),
         footer: LayoutFooter
       }
     },
     {
-      path: '/about/licensing',
-      name: 'about.licensing',
+      path: "/about/licensing",
+      name: "about.licensing",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/about/License'),
+        default: () => import("./views/about/License"),
         footer: LayoutFooter
       }
     },
     {
-      path: '/about/getting-in-contact',
-      name: 'about.contact',
+      path: "/about/getting-in-contact",
+      name: "about.contact",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/about/Contact'),
+        default: () => import("./views/about/Contact"),
         footer: LayoutFooter
       }
     },
     {
-      path: '/info/terms-conditions',
-      name: 'info.conditions',
+      path: "/info/terms-conditions",
+      name: "info.conditions",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/information/TermsConditions'),
+        default: () => import("./views/information/TermsConditions"),
         footer: LayoutFooter
       }
     },
     {
-      path: '/info/privacy-policy',
-      name: 'info.privacy',
+      path: "/info/privacy-policy",
+      name: "info.privacy",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/information/PrivacyPolicy'),
+        default: () => import("./views/information/PrivacyPolicy"),
         footer: LayoutFooter
       }
     },
     {
-      path: '/info/legal-notice',
-      name: 'info.legal',
+      path: "/info/legal-notice",
+      name: "info.legal",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/information/LegalNotice'),
+        default: () => import("./views/information/LegalNotice"),
         footer: LayoutFooter
       }
     },
     {
-      path: '*',
-      name: '404',
+      path: "*",
+      name: "404",
       components: {
         header: LayoutHeader,
-        default: () => import('./views/Error'),
+        default: () => import("./views/Error"),
         footer: LayoutFooter
       },
       props: {
         default: () => ({
-          title: '404',
-          lead: 'Page not found',
+          title: "404",
+          lead: "Page not found",
           description:
-            'The page your are looking for no longer exists or the url is incorrect.'
+            "The page your are looking for no longer exists or the url is incorrect."
         })
       }
     }
   ]
-})
+});

@@ -24,16 +24,18 @@
             </router-link>
           </div>
         </div>
+        <div class="laptop-container">
+          <img
+            class="intro-laptop"
+            src="@/assets/img/previews/macbook.svg"
+            height="100%"
+          />
+          <div class="spotlight"></div>
+        </div>
       </div>
-      <div class="laptop-container">
-        <img
-          class="intro-laptop"
-          src="@/assets/img/previews/macbook.svg"
-          height="100%"
-        />
-        <div class="spotlight"></div>
+      <div class="see-more">
+        See more<br /><i class="fa fa-chevron-down mt-2" />
       </div>
-      <div class="see-more">See more<br />⌄</div>
     </div>
   </div>
 </template>
@@ -42,14 +44,16 @@
 .introduction {
   position: relative;
   clear: both;
-  padding: 200px;
-  // padding-left: 200px;
+  padding: 200px var(--body-padding);
 
   .intro-container {
     max-width: 1920px;
-    min-height: calc(100vh - 400px);
+    min-height: calc(100vh - 20rem);
     margin: 0 auto;
-    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .section-content {
@@ -111,26 +115,26 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
-      width: 650px;
-      height: 37;
+      width: 41.6rem;
       border-radius: 50%;
       background: #5a349d;
-      z-index: -1;
-      box-shadow: 0px 0px 243px 308px rgba(90, 52, 157, 0.5);
+      z-index: -10;
+      box-shadow: 0px 0px 15.6rem 10rem rgba(90, 52, 157, 0.5);
     }
   }
 
   button {
-    width: 170px;
-    height: 52px;
+    width: 8.5rem;
+    height: 2.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-weight: 600;
+    font-size: 0.9rem;
     border-radius: 50px;
     background-color: transparent;
-    border: var(--primary) solid 3px;
+    border: var(--primary) solid 0.15rem;
     outline: none;
     color: var(--primary);
     text-align: unset;
@@ -166,15 +170,25 @@
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1300px) {
   .introduction {
-    .intro-laptop {
-      width: 100%;
-    }
+    padding: 10rem var(--body-padding) !important;
+  }
 
-    .section-video {
-      overflow: hidden;
-      max-height: initial;
+  .section-content {
+    position: relative !important ;
+    top: 0 !important;
+    transform: translateY(0) !important;
+  }
+
+  .laptop-container {
+    margin-top: 3rem;
+    position: relative !important;
+    transform: translate(0) !important;
+    width: 100% !important;
+
+    .intro-laptop {
+      width: 100% !important;
     }
   }
 }

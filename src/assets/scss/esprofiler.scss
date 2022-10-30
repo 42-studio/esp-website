@@ -2,12 +2,46 @@
 @import 'node_modules/animate.css/source/base';
 // @import 'node_modules/animate.css/source/attention_seekers/bounce';
 
+
+html {
+  --body-padding: 20px;
+}
+
 html, body, #app {
   min-height: 100vh;
   color: #5e6066;
   background-color: #160C28;
-  font-size: 20px;
+  font-size: 12px;
 }
+
+@include media-breakpoint-up(sm) {
+  html {
+    --body-padding: 20px;
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    --body-padding: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    --body-padding: 75px;
+    font-size: 1.3rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    --body-padding: 200px;
+    font-size: 1.3rem;
+  }
+}
+
 
 #app {
   display: flex;

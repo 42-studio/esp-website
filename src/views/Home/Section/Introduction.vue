@@ -1,138 +1,347 @@
+<script>
+function convertRemToPixels(rem) {
+  return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
+let refs,
+  canvas,
+  ctx,
+  desktop,
+  logoLocation,
+  vendorLocation,
+  consumerLocation,
+  vendorParagraphLocation;
+let cornerRoundnessRem = 2; // radius (rem)
+let cornerRoundness = convertRemToPixels(cornerRoundnessRem); // radius (px)
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.beginPath();
+
+  ctx.lineWidth = cornerRoundness / 5;
+  ctx.lineCap = "round";
+  ctx.shadowBlur = convertRemToPixels(2);
+
+  let cornerRoundnessOffset;
+
+  ctx.strokeStyle = "#C00027";
+  ctx.shadowColor = "#C00027";
+
+  // red line
+  if (desktop) {
+    ctx.moveTo(
+      logoLocation.left + 10,
+      logoLocation.top + logoLocation.height / 2
+    );
+
+    ctx.lineTo(
+      vendorLocation.left + vendorLocation.width / 2 + cornerRoundness,
+      logoLocation.top + logoLocation.height / 2
+    );
+
+    ctx.quadraticCurveTo(
+      vendorLocation.left + vendorLocation.width / 2,
+      logoLocation.top + logoLocation.height / 2,
+      vendorLocation.left + vendorLocation.width / 2,
+      logoLocation.top + logoLocation.height / 2 + cornerRoundness
+    );
+
+    ctx.lineTo(
+      vendorLocation.left + vendorLocation.width / 2,
+      vendorLocation.top - convertRemToPixels(1.5)
+    );
+  } else {
+    ctx.moveTo(
+      logoLocation.left + 10,
+      logoLocation.top + logoLocation.height / 2
+    );
+
+    ctx.lineTo(
+      vendorLocation.left + vendorLocation.width / 2 + cornerRoundness,
+      logoLocation.top + logoLocation.height / 2
+    );
+
+    ctx.quadraticCurveTo(
+      vendorLocation.left + vendorLocation.width / 2,
+      logoLocation.top + logoLocation.height / 2,
+      vendorLocation.left + vendorLocation.width / 2,
+      logoLocation.top + logoLocation.height / 2 - cornerRoundness
+    );
+
+    ctx.lineTo(
+      vendorLocation.left + vendorLocation.width / 2,
+      vendorLocation.top +
+        vendorLocation.height +
+        vendorParagraphLocation.height +
+        convertRemToPixels(1.5)
+    );
+  }
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.strokeStyle = "#FFFFFF";
+  ctx.shadowColor = "#FFFFFF";
+  // white line
+  ctx.moveTo(
+    logoLocation.left + logoLocation.width - 10,
+    logoLocation.top + logoLocation.height / 2
+  );
+
+  ctx.lineTo(
+    consumerLocation.left + consumerLocation.width / 2 - cornerRoundness,
+    logoLocation.top + logoLocation.height / 2
+  );
+
+  ctx.quadraticCurveTo(
+    consumerLocation.left + consumerLocation.width / 2,
+    logoLocation.top + logoLocation.height / 2,
+    consumerLocation.left + consumerLocation.width / 2,
+    logoLocation.top + logoLocation.height / 2 + cornerRoundness
+  );
+
+  ctx.lineTo(
+    consumerLocation.left + consumerLocation.width / 2,
+    consumerLocation.top - convertRemToPixels(1.5)
+  );
+
+  ctx.stroke();
+}
+
+function getLocations() {
+  desktop = true;
+  let vendorRef = refs?.vendorD;
+
+  if (refs?.vendorD.offsetHeight == 0) {
+    desktop = false;
+    vendorRef = refs?.vendorM;
+  }
+
+  logoLocation = {
+    height: refs?.logo.offsetHeight,
+    width: refs?.logo.offsetWidth,
+    top:
+      refs?.logo.offsetTop +
+      refs?.logoContainer.offsetTop -
+      refs?.logo.offsetHeight / 2,
+    left: refs?.logo.offsetLeft - refs?.logo.width / 2
+  };
+  vendorLocation = {
+    height: vendorRef.offsetHeight,
+    width: vendorRef.offsetWidth,
+    top: vendorRef.offsetTop,
+    left: vendorRef.offsetLeft
+  };
+  vendorParagraphLocation = {
+    height: refs?.vendorParagraph.offsetHeight,
+    width: refs?.vendorParagraph.offsetWidth,
+    top: refs?.vendorParagraph.offsetTop,
+    left: refs?.vendorParagraph.offsetLeft
+  };
+  consumerLocation = {
+    height: refs?.consumer.offsetHeight,
+    width: refs?.consumer.offsetWidth,
+    top: refs?.consumer.offsetTop,
+    left: refs?.consumer.offsetLeft
+  };
+}
+
+export default {
+  mounted() {
+    refs = this.$refs;
+    canvas = this.$refs.canvas;
+    ctx = canvas.getContext("2d");
+
+    window.addEventListener("resize", resizeCanvas, false);
+
+    function resizeCanvas() {
+      canvas.width = canvas.getBoundingClientRect().width;
+      canvas.height = canvas.getBoundingClientRect().height;
+      cornerRoundness = convertRemToPixels(cornerRoundnessRem);
+
+      getLocations();
+      draw();
+    }
+
+    resizeCanvas();
+  }
+};
+</script>
+
 <template>
-
-  <div>
-
-    <div class="container text-center mb-8">
-
-      <brand-icon width="64px" class="mb-5" />
-
-      <div class="col-md-8 mx-auto">
-
-        <h3 class="display-3">
-          INTRODUCING
-        </h3>
-        <h4>Enterprise Security Profiler</h4>
-
-        <p class="lead">
-          A platform for continuous assurance of your security investments
-          against threat-centric frameworks including MITRE ATT&CK®. Utilizing our advanced collider architecture,
-          we combine what your security assets provide, how much they cost, and how they are performing.
-          Allowing you to determine where to invest for maximum risk reduction.
+  <div class="padding-container">
+    <div class="wrapper">
+      <div class="title-container">
+        <h1>The cyber security market is broken.</h1>
+        <p class="subtitle">
+          ESProfiler provides a SaaS platform for
+          <span class="red">Vendors</span> and
+          <span class="white">Consumers</span> to work better together by
+          standardising the way cyber security is commercialised.
         </p>
-
-        <b-link type="button" class="btn btn-primary mt-5 mb-5" :to="{ name: 'solutions.overview' }">
-          View Our Solutions
-        </b-link>
       </div>
-
+      <section class="vendors mobile-display">
+        <h2 ref="vendorM" class="red mb-0 mt-8">Vendors</h2>
+        <p ref="vendorParagraph">
+          can better articulate what their security solutions do in a meaningful
+          way directly against the possible attacks the consumers face,
+          mitigating the time, friction & frustration expressed in marketing &
+          sales through product breakdown & information continuity designed to
+          improve consumer engagement & retention.
+        </p>
+      </section>
+      <div ref="logoContainer" class="graphic-container">
+        <img
+          ref="logo"
+          class="logo"
+          src="@/assets/img/logo.png"
+          alt="es profiler logo"
+        />
+        <svg height="100%" width="100%"></svg>
+      </div>
+      <div class="info-container">
+        <section class="vendors desktop-display">
+          <h2 ref="vendorD" class="red">Vendors</h2>
+          <p>
+            can better articulate what their security solutions do in a
+            meaningful way directly against the possible attacks the consumers
+            face, mitigating the time, friction & frustration expressed in
+            marketing & sales through product breakdown & information continuity
+            designed to improve consumer engagement & retention.
+          </p>
+        </section>
+        <section class="consumers">
+          <h2 ref="consumer" class="white">Consumers</h2>
+          <p>
+            can directly operationalise the product data provided by the vendors
+            in ESProfiler’s SaaS Platform for a more seamless product adoption
+            experience by breaking down the silos between; The board, C-Suite,
+            Threat Intel Teams, Innovations, Procurement, Security Operations &
+            Architecture and the Product Owners.
+          </p>
+        </section>
+      </div>
+      <canvas ref="canvas" class="introduction-canvas"></canvas>
     </div>
-
-    <node-scene />
-
-       <!-- <div class="info-graphic">
-
-         <div class="info info-1">
-           <div class="icon icon-lg icon-shape rounded-circle">
-             <i class="fa fa-user" />
-           </div>
-           <div class="text-center">
-             <h3>
-               Control Dependency Mapping
-             </h3>
-             <p class="load">
-               Understanding what your security assets provide, their dependencies, and how much they cost against
-               threat-centric frameworks.
-               We have developed a standardized model for capturing and quantifying this information.
-             </p>
-           </div>
-         </div>
-
-         <div class="info info-2">
-           <div class="icon icon-lg icon-shape rounded-circle">
-             <i class="fa fa-user" />
-           </div>
-           <div class="text-center">
-             <h3>Threat Intelligence</h3>
-             <p class="load">
-               The threat landscape is constantly evolving over time and so should your investment and strategy.
-               Security assets that once satisfied risk appetite might no longer be relevant against current threat
-               intelligence.
-             </p>
-           </div>
-         </div>
-
-         <div class="info info-3">
-           <div class="icon icon-lg icon-shape rounded-circle">
-             <i class="fa fa-user" />
-           </div>
-           <div class="text-center">
-             <h3>Environmental Telemetry</h3>
-             <p class="load">
-               Every enterprise is unique. Capturing telemetry across your incidents, breach assessments,
-               and more to enable evidence-based validation of control posture.
-             </p>
-           </div>
-         </div>
-
-       </div> -->
-
   </div>
-
 </template>
 
 <style lang="scss">
+.padding-container {
+  padding: 6rem var(--body-padding);
 
-.info-graphic {
-  position: relative;
-  max-width: 1280px;
-  margin: auto;
-  padding-bottom: 50%;
-  min-height: 780px;
+  .wrapper {
+    position: relative;
+    max-width: 1920px;
+    min-height: calc(100vh - 400px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  .info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(0%);
-    transform-origin: center center;
+    .introduction-canvas {
+      top: 0;
+      left: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      // z-index: -1;
+    }
+
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 3.3rem;
+        margin-bottom: 28px;
+      }
+      .subtitle {
+        max-width: 720px;
+      }
+    }
+
+    .graphic-container {
+      position: relative;
+      height: 26rem;
+      width: 100%;
+
+      .logo {
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .info-container {
+      display: flex;
+      flex-direction: row;
+      gap: 8rem;
+
+      h2 {
+        margin: 0;
+        width: min-content;
+      }
+
+      section.vendors {
+        text-align: left;
+      }
+
+      section.consumers {
+        text-align: right;
+      }
+    }
   }
-
-  .info {
-    background-color: #ceced2;
-    border-radius: 7px;
-
-    .icon {
-      background-color: inherit;
-      transform: translateY(-54px);
-    }
-
-    &-1 {
-      top: 20%;
-      transform: translateX(-155%);
-    }
-
-    &-2 {
-      top: 0%;
-    }
-
-    &-3 {
-      top: 20%;
-      transform: translateX(55%)
-    }
-  }
-
-  .esp-icon {
-    top: 70%;
-    max-width: 320px;
-    transform: translateX(-50%) translateY(-50%);
-  }
-
 }
 
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: lighter;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+
+.red {
+  font-weight: bold;
+  color: var(--primary);
+}
+.white {
+  margin-left: auto !important;
+  font-weight: bold;
+  color: white;
+}
+
+.mobile-display {
+  display: block;
+
+  h2 {
+    width: min-content;
+  }
+}
+.desktop-display {
+  display: none;
+}
+
+@include media-breakpoint-up(md) {
+  .mobile-display {
+    display: none;
+  }
+  .desktop-display {
+    display: block;
+  }
+}
 </style>
-<script>
-import NodeScene from '../../../components/NodeScene'
-export default {
-  components: { NodeScene }
-}
-</script>

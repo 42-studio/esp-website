@@ -68,10 +68,12 @@ $colors: map-merge((
 
 $es-red: #C00027 !default;
 $accent: #160C28 !default;
+$dark-text: #333840 !default;
 
 $default: #264B82 !default;
 $primary: #AD0326 !default;
 $secondary: #7F0014 !default;
+
 $success: $green !default;
 $info: $teal !default;
 $warning: $orange !default;
@@ -93,8 +95,11 @@ $github: #222222 !default;
 $theme-colors: () !default;
 $theme-colors: map-merge((
         "default": $default,
+        "dark-text": $dark-text,
+        "es-red": $es-red,
         "primary": $primary,
         "secondary": $secondary,
+        "accent": $accent,
         "success": $success,
         "info": $info,
         "warning": $warning,
@@ -342,7 +347,7 @@ $font-weight-base: $font-weight-normal !default;
 $shape-height-base: 1.5 !default;
 
 
-$h1-font-size: $font-size-base * 2.5 !default;
+$h1-font-size: $font-size-base * 3 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;

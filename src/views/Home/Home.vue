@@ -2,17 +2,20 @@
   <div class="wrapper">
     <Heading />
 
-    <CompanyValues />
-
     <Introduction />
+
+    <WhiteSection class="white-section">
+      <Understanding />
+      <Analytics />
+    </WhiteSection>
+
+    <!-- <CompanyValues />
 
     <esp-background
       image="backgrounds/night-city-2.jpg"
       color="#f7f7f7"
       class="skew-left-bottom"
     />
-
-    <Analytics />
 
     <esp-background
       image="backgrounds/node.jpg"
@@ -26,7 +29,7 @@
       image="backgrounds/night-city-fence.jpg"
       color="#f7f7f7"
       class="skew-right-top"
-    />
+    /> -->
   </div>
 </template>
 
@@ -36,10 +39,24 @@ import CompanyValues from "./Section/CompanyValues";
 import RequestDemo from "./Section/RequestDemo";
 import Introduction from "./Section/Introduction";
 import Heading from "./Section/Heading";
+import WhiteSection from "./Section/WhiteSection.vue";
+import Understanding from "./Section/Understanding";
 
 export default {
-  components: { Heading, Introduction, RequestDemo, CompanyValues, Analytics }
+  components: {
+    Heading,
+    Introduction,
+    WhiteSection,
+    RequestDemo,
+    CompanyValues,
+    Analytics,
+    Understanding
+  }
 };
 </script>
 
-<style></style>
+<style>
+.white-section {
+  margin-bottom: 10rem;
+}
+</style>
