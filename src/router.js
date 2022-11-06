@@ -34,7 +34,7 @@ export default new Router({
     },
     {
       path: "/schedule-demo",
-      name: "schedule.demo",
+      name: "schedule-demo",
       components: {
         header: LayoutHeader,
         default: () => import("./views/ScheduleDemo"),

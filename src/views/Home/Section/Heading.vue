@@ -150,14 +150,14 @@
 
   .see-more {
     position: absolute;
-    bottom: 48px;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
 
     text-align: center;
     color: #fff;
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.03rem;
     line-height: 1.2rem;
   }

@@ -154,8 +154,14 @@ export default {
     window.addEventListener("resize", resizeCanvas, false);
 
     function resizeCanvas() {
-      canvas.width = canvas.getBoundingClientRect().width;
-      canvas.height = canvas.getBoundingClientRect().height;
+      const scale = window.devicePixelRatio;
+
+      canvas.width = canvas.getBoundingClientRect().width * scale;
+      canvas.height = canvas.getBoundingClientRect().height * scale;
+      canvas.style.width = canvas.getBoundingClientRect().width + "px";
+      canvas.style.height = canvas.getBoundingClientRect().height + "px";
+
+      ctx.scale(scale, scale);
       cornerRoundness = convertRemToPixels(cornerRoundnessRem);
 
       getLocations();
@@ -272,8 +278,8 @@ export default {
 
       .logo {
         position: absolute;
-        width: 13rem;
-        height: 13rem;
+        width: 10rem;
+        height: 10rem;
 
         top: 50%;
         left: 50%;

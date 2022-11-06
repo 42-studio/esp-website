@@ -84,7 +84,7 @@ function draw() {
   ctx.lineTo(
     lastCircle.left + lastCircle.width / 2,
     Math.max(
-      canvas.height - cornerRoundness * 3,
+      canvas.height / window.devicePixelRatio - cornerRoundness * 3,
       lastCircle.top + lastCircle.height
     )
   );
@@ -93,38 +93,41 @@ function draw() {
   ctx.quadraticCurveTo(
     lastCircle.left + lastCircle.width / 2,
     Math.max(
-      canvas.height - cornerRoundness * 2,
+      canvas.height / window.devicePixelRatio - cornerRoundness * 2,
       lastCircle.top + lastCircle.height
     ),
     lastCircle.left + lastCircle.width / 2 + cornerRoundnessOffset,
     Math.max(
-      canvas.height - cornerRoundness * 2,
+      canvas.height / window.devicePixelRatio - cornerRoundness * 2,
       lastCircle.top + lastCircle.height
     )
   );
 
   // horizontal line
   ctx.lineTo(
-    canvas.width / 2 - cornerRoundnessOffset,
+    canvas.width / window.devicePixelRatio / 2 - cornerRoundnessOffset,
     Math.max(
-      canvas.height - cornerRoundness * 2,
+      canvas.height / window.devicePixelRatio - cornerRoundness * 2,
       lastCircle.top + lastCircle.height
     )
   );
 
-  // draw line to next circle
+  // draw line to badge
   ctx.quadraticCurveTo(
-    canvas.width / 2,
+    canvas.width / window.devicePixelRatio / 2,
     Math.max(
-      canvas.height - cornerRoundness * 2,
+      canvas.height / window.devicePixelRatio - cornerRoundness * 2,
       lastCircle.top + lastCircle.height
     ),
-    canvas.width / 2,
-    canvas.height - cornerRoundness
+    canvas.width / window.devicePixelRatio / 2,
+    canvas.height / window.devicePixelRatio - cornerRoundness
   );
 
   // vertical line
-  ctx.lineTo(canvas.width / 2, canvas.height);
+  ctx.lineTo(
+    canvas.width / window.devicePixelRatio / 2,
+    canvas.height / window.devicePixelRatio
+  );
 
   ctx.stroke();
 }
@@ -149,8 +152,14 @@ export default {
     window.addEventListener("resize", resizeCanvas, false);
 
     function resizeCanvas() {
-      canvas.width = canvas.getBoundingClientRect().width;
-      canvas.height = canvas.getBoundingClientRect().height;
+      const scale = window.devicePixelRatio;
+
+      canvas.width = canvas.getBoundingClientRect().width * scale;
+      canvas.height = canvas.getBoundingClientRect().height * scale;
+      // canvas.style.width = canvas.getBoundingClientRect().width + "px";
+      // canvas.style.height = canvas.getBoundingClientRect().height + "px";
+
+      ctx.scale(scale, scale);
       cornerRoundness = convertRemToPixels(cornerRoundnessRem);
 
       getCircleLocation();
