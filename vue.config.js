@@ -63,13 +63,6 @@ module.exports = {
       title: "ES Profiler | Enterprise Security Measured",
       chunks: ["chunk-vendors", "chunk-common", "index"]
     },
-    "404": {
-      entry: "src/main.js",
-      template: "public/index.html",
-      filename: "404.html",
-      title: "ES Profiler | Enterprise Security Measured",
-      chunks: ["chunk-vendors", "chunk-common", "index"]
-    }
   },
 
   css: {
