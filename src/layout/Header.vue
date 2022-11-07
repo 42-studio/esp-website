@@ -35,7 +35,7 @@
                 class="btn nav-link btn-link"
                 data-toggle="dropdown"
               >
-                <span class="nav-link-inner--text">About</span>
+                <span>About</span>
                 <i class="fa fa-chevron-down fa-lg" />
               </button>
             </router-link>
@@ -67,7 +67,7 @@
           </template>
         </base-dropdown>
 
-        <li class="nav-item">
+        <li class="nav-item demo-btn">
           <router-link :to="{ name: 'schedule.demo' }">
             <button class="button">
               Schedule a Demo
@@ -124,6 +124,16 @@ header {
 .button:hover {
   background-color: var(--primary);
   transform: scale(1.05);
+}
+
+.navbar-collapse {
+  width: auto !important;
+}
+
+@media (max-width: 992px) {
+  .demo-btn {
+    margin-top: 1rem;
+  }
 }
 </style>
 
