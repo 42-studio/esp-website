@@ -175,7 +175,7 @@
 
   50% {
     transform: translate(-35%, -35%);
-    box-shadow: 0px 0px 15.6rem 10rem rgba(101, 62, 171, 0.5);
+    box-shadow: 0px 0px 15.6rem 10rem rgba(90, 52, 157, 0.5);
   }
 
   100% {
