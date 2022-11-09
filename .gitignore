@@ -22,6 +22,8 @@ node_modules/
 # Maven
 target/
 
+# Yarn Lock
+.yarn
 
 # JetBrains IDE
 .idea/

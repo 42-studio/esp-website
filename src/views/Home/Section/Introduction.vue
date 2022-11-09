@@ -1,6 +1,6 @@
 <script>
-function convertRemToPixels(rem) {
-  return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+function convertRemToPixels (rem) {
+  return rem * parseFloat(getComputedStyle(document.documentElement).fontSize)
 }
 
 let refs,
@@ -10,63 +10,63 @@ let refs,
   logoLocation,
   vendorLocation,
   consumerLocation,
-  vendorParagraphLocation;
-let cornerRoundnessRem = 2; // radius (rem)
-let cornerRoundness = convertRemToPixels(cornerRoundnessRem); // radius (px)
+  vendorParagraphLocation
+const cornerRoundnessRem = 2 // radius (rem)
+let cornerRoundness = convertRemToPixels(cornerRoundnessRem) // radius (px)
 
-function draw() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.beginPath();
+function draw () {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  ctx.beginPath()
 
-  ctx.lineWidth = cornerRoundness / 5;
-  ctx.lineCap = "round";
-  ctx.shadowBlur = convertRemToPixels(2);
+  ctx.lineWidth = cornerRoundness / 5
+  ctx.lineCap = 'round'
+  ctx.shadowBlur = convertRemToPixels(2)
 
-  let cornerRoundnessOffset;
+  let cornerRoundnessOffset
 
-  ctx.strokeStyle = "#C00027";
-  ctx.shadowColor = "#C00027";
+  ctx.strokeStyle = '#C00027'
+  ctx.shadowColor = '#C00027'
 
   // red line
   if (desktop) {
     ctx.moveTo(
       logoLocation.left + 10,
       logoLocation.top + logoLocation.height / 2
-    );
+    )
 
     ctx.lineTo(
       vendorLocation.left + vendorLocation.width / 2 + cornerRoundness,
       logoLocation.top + logoLocation.height / 2
-    );
+    )
 
     ctx.quadraticCurveTo(
       vendorLocation.left + vendorLocation.width / 2,
       logoLocation.top + logoLocation.height / 2,
       vendorLocation.left + vendorLocation.width / 2,
       logoLocation.top + logoLocation.height / 2 + cornerRoundness
-    );
+    )
 
     ctx.lineTo(
       vendorLocation.left + vendorLocation.width / 2,
       vendorLocation.top - convertRemToPixels(1.5)
-    );
+    )
   } else {
     ctx.moveTo(
       logoLocation.left + 10,
       logoLocation.top + logoLocation.height / 2
-    );
+    )
 
     ctx.lineTo(
       vendorLocation.left + vendorLocation.width / 2 + cornerRoundness,
       logoLocation.top + logoLocation.height / 2
-    );
+    )
 
     ctx.quadraticCurveTo(
       vendorLocation.left + vendorLocation.width / 2,
       logoLocation.top + logoLocation.height / 2,
       vendorLocation.left + vendorLocation.width / 2,
       logoLocation.top + logoLocation.height / 2 - cornerRoundness
-    );
+    )
 
     ctx.lineTo(
       vendorLocation.left + vendorLocation.width / 2,
@@ -74,46 +74,46 @@ function draw() {
         vendorLocation.height +
         vendorParagraphLocation.height +
         convertRemToPixels(1.5)
-    );
+    )
   }
-  ctx.stroke();
+  ctx.stroke()
 
-  ctx.beginPath();
-  ctx.strokeStyle = "#FFFFFF";
-  ctx.shadowColor = "#FFFFFF";
+  ctx.beginPath()
+  ctx.strokeStyle = '#FFFFFF'
+  ctx.shadowColor = '#FFFFFF'
   // white line
   ctx.moveTo(
     logoLocation.left + logoLocation.width - 10,
     logoLocation.top + logoLocation.height / 2
-  );
+  )
 
   ctx.lineTo(
     consumerLocation.left + consumerLocation.width / 2 - cornerRoundness,
     logoLocation.top + logoLocation.height / 2
-  );
+  )
 
   ctx.quadraticCurveTo(
     consumerLocation.left + consumerLocation.width / 2,
     logoLocation.top + logoLocation.height / 2,
     consumerLocation.left + consumerLocation.width / 2,
     logoLocation.top + logoLocation.height / 2 + cornerRoundness
-  );
+  )
 
   ctx.lineTo(
     consumerLocation.left + consumerLocation.width / 2,
     consumerLocation.top - convertRemToPixels(1.5)
-  );
+  )
 
-  ctx.stroke();
+  ctx.stroke()
 }
 
-function getLocations() {
-  desktop = true;
-  let vendorRef = refs?.vendorD;
+function getLocations () {
+  desktop = true
+  let vendorRef = refs?.vendorD
 
   if (refs?.vendorD.offsetHeight == 0) {
-    desktop = false;
-    vendorRef = refs?.vendorM;
+    desktop = false
+    vendorRef = refs?.vendorM
   }
 
   logoLocation = {
@@ -124,63 +124,70 @@ function getLocations() {
       refs?.logoContainer.offsetTop -
       refs?.logo.offsetHeight / 2,
     left: refs?.logo.offsetLeft - refs?.logo.width / 2
-  };
+  }
   vendorLocation = {
     height: vendorRef.offsetHeight,
     width: vendorRef.offsetWidth,
     top: vendorRef.offsetTop,
     left: vendorRef.offsetLeft
-  };
+  }
   vendorParagraphLocation = {
     height: refs?.vendorParagraph.offsetHeight,
     width: refs?.vendorParagraph.offsetWidth,
     top: refs?.vendorParagraph.offsetTop,
     left: refs?.vendorParagraph.offsetLeft
-  };
+  }
   consumerLocation = {
     height: refs?.consumer.offsetHeight,
     width: refs?.consumer.offsetWidth,
     top: refs?.consumer.offsetTop,
     left: refs?.consumer.offsetLeft
-  };
+  }
 }
 
 export default {
-  mounted() {
-    refs = this.$refs;
-    canvas = this.$refs.canvas;
-    ctx = canvas.getContext("2d");
+  mounted () {
+    refs = this.$refs
+    canvas = this.$refs.canvas
+    ctx = canvas.getContext('2d')
 
-    window.addEventListener("resize", resizeCanvas, false);
+    window.addEventListener('resize', resizeCanvas, false)
 
-    function resizeCanvas() {
-      canvas.width = canvas.getBoundingClientRect().width;
-      canvas.height = canvas.getBoundingClientRect().height;
-      cornerRoundness = convertRemToPixels(cornerRoundnessRem);
+    function resizeCanvas () {
+      canvas.width = canvas.getBoundingClientRect().width
+      canvas.height = canvas.getBoundingClientRect().height
+      cornerRoundness = convertRemToPixels(cornerRoundnessRem)
 
-      getLocations();
-      draw();
+      getLocations()
+      draw()
     }
 
-    resizeCanvas();
+    resizeCanvas()
   }
-};
+}
 </script>
 
 <template>
   <div class="padding-container">
+
+    <!-- Stars Animation WIP -->
+<!--    <div id="stars" />-->
+<!--    <div id="stars2" />-->
+<!--    <div id="stars3" />-->
+
     <div class="wrapper">
       <div class="title-container">
-        <h1>The cyber security market is broken.</h1>
+        <h1>Security Investment Is Broken.</h1>
         <p class="subtitle">
-          ESProfiler provides a SaaS platform for
-          <span class="red">Vendors</span> and
-          <span class="white">Consumers</span> to work better together by
-          standardising the way cyber security is commercialised.
+          Enterprises are spending more and deploying more security products,
+          <br>
+          but breaches are still <span class="red">increasing!</span>
         </p>
       </div>
       <section class="vendors mobile-display">
-        <h2 ref="vendorM" class="red mb-0 mt-8">Vendors</h2>
+        <h2 ref="vendorM" class="red mb-0 mt-8">
+          Vendors
+        </h2>
         <p ref="vendorParagraph">
           can better articulate what their security solutions do in a meaningful
           way directly against the possible attacks the consumers face,
@@ -195,12 +202,14 @@ export default {
           class="logo"
           src="@/assets/img/logo.png"
           alt="es profiler logo"
-        />
-        <svg height="100%" width="100%"></svg>
+        >
+        <svg height="100%" width="100%" />
       </div>
       <div class="info-container">
         <section class="vendors desktop-display">
-          <h2 ref="vendorD" class="red">Vendors</h2>
+          <h2 ref="vendorD" class="red">
+            Vendors
+          </h2>
           <p>
             can better articulate what their security solutions do in a
             meaningful way directly against the possible attacks the consumers
@@ -210,7 +219,9 @@ export default {
           </p>
         </section>
         <section class="consumers">
-          <h2 ref="consumer" class="white">Consumers</h2>
+          <h2 ref="consumer" class="white">
+            Consumers
+          </h2>
           <p>
             can directly operationalise the product data provided by the vendors
             in ESProfiler’s SaaS Platform for a more seamless product adoption
@@ -220,7 +231,7 @@ export default {
           </p>
         </section>
       </div>
-      <canvas ref="canvas" class="introduction-canvas"></canvas>
+      <canvas ref="canvas" class="introduction-canvas" />
     </div>
   </div>
 </template>
@@ -252,6 +263,7 @@ export default {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      z-index: 1;
 
       h1 {
         color: #fff;
@@ -285,6 +297,7 @@ export default {
       display: flex;
       flex-direction: row;
       gap: 8rem;
+      z-index: 1;
 
       h2 {
         margin: 0;
