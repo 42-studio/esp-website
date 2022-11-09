@@ -22,8 +22,6 @@ dist/
 # Maven
 target/
 dist/
-# Yarn Lock
-.yarn
 
 # JetBrains IDE
 .idea/
