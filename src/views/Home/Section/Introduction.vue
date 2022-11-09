@@ -174,48 +174,28 @@ export default {
 </script>
 
 <template>
-  <div class="padding-container">
-    <!-- Stars Animation WIP -->
-    <!--    <div id="stars" />-->
-    <!--    <div id="stars2" />-->
-    <!--    <div id="stars3" />-->
+  <div>
+    <div class="stars" />
+    <div class="stars" style="animation-delay: calc(var(--stars-speed) / 2)" />
+    <div class="stars2" />
+    <div class="stars3" />
+    <div class="padding-container">
+      <!-- Stars Animation WIP -->
 
-    <div class="wrapper">
-      <div class="title-container">
-        <h1>Security Investment Is Broken.</h1>
-        <p class="subtitle">
-          Enterprises are spending more and deploying more security products,
-          <br />
-          but breaches are still <span class="red">increasing!</span>
-        </p>
-      </div>
-      <section class="vendors mobile-display">
-        <h2 ref="vendorM" class="red mb-0 mt-8">
-          Vendors
-        </h2>
-        <p ref="vendorParagraph">
-          can better articulate what their security solutions do in a meaningful
-          way directly against the possible attacks the consumers face,
-          mitigating the time, friction & frustration expressed in marketing &
-          sales through product breakdown & information continuity designed to
-          improve consumer engagement & retention.
-        </p>
-      </section>
-      <div ref="logoContainer" class="graphic-container">
-        <img
-          ref="logo"
-          class="logo"
-          src="@/assets/img/logo.png"
-          alt="es profiler logo"
-        />
-        <svg height="100%" width="100%" />
-      </div>
-      <div class="info-container">
-        <section class="vendors desktop-display">
-          <h2 ref="vendorD" class="red">
+      <div class="wrapper">
+        <div class="title-container">
+          <h1>Security Investment Is Broken.</h1>
+          <p class="subtitle">
+            Enterprises are spending more and deploying more security products,
+            <br />
+            but breaches are still <span class="red">increasing!</span>
+          </p>
+        </div>
+        <section class="vendors mobile-display">
+          <h2 ref="vendorM" class="red mb-0 mt-8">
             Vendors
           </h2>
-          <p>
+          <p ref="vendorParagraph">
             can better articulate what their security solutions do in a
             meaningful way directly against the possible attacks the consumers
             face, mitigating the time, friction & frustration expressed in
@@ -223,20 +203,43 @@ export default {
             designed to improve consumer engagement & retention.
           </p>
         </section>
-        <section class="consumers">
-          <h2 ref="consumer" class="white">
-            Consumers
-          </h2>
-          <p>
-            can directly operationalise the product data provided by the vendors
-            in ESProfiler’s SaaS Platform for a more seamless product adoption
-            experience by breaking down the silos between; The board, C-Suite,
-            Threat Intel Teams, Innovations, Procurement, Security Operations &
-            Architecture and the Product Owners.
-          </p>
-        </section>
+        <div ref="logoContainer" class="graphic-container">
+          <img
+            ref="logo"
+            class="logo"
+            src="@/assets/img/logo.png"
+            alt="es profiler logo"
+          />
+          <svg height="100%" width="100%" />
+        </div>
+        <div class="info-container">
+          <section class="vendors desktop-display">
+            <h2 ref="vendorD" class="red">
+              Vendors
+            </h2>
+            <p>
+              can better articulate what their security solutions do in a
+              meaningful way directly against the possible attacks the consumers
+              face, mitigating the time, friction & frustration expressed in
+              marketing & sales through product breakdown & information
+              continuity designed to improve consumer engagement & retention.
+            </p>
+          </section>
+          <section class="consumers">
+            <h2 ref="consumer" class="white">
+              Consumers
+            </h2>
+            <p>
+              can directly operationalise the product data provided by the
+              vendors in ESProfiler’s SaaS Platform for a more seamless product
+              adoption experience by breaking down the silos between; The board,
+              C-Suite, Threat Intel Teams, Innovations, Procurement, Security
+              Operations & Architecture and the Product Owners.
+            </p>
+          </section>
+        </div>
+        <canvas ref="canvas" class="introduction-canvas" />
       </div>
-      <canvas ref="canvas" class="introduction-canvas" />
     </div>
   </div>
 </template>
