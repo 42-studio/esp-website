@@ -115,11 +115,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
-      width: 41.6rem;
+      width: 30rem;
+      height: 10rem;
       border-radius: 50%;
-      background: #5a349d;
+      background: rgba(90, 52, 157, 0.5);
       z-index: -10;
-      box-shadow: 0px 0px 15.6rem 10rem rgba(90, 52, 157, 0.5);
+      box-shadow: 0px 0px 15.6rem 12rem rgba(90, 52, 157, 0.5);
     }
   }
 

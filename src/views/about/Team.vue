@@ -1,48 +1,172 @@
 <template>
-
-  <div>
-
-    <esp-background image="backgrounds/laptop.jpg" class="section-content padded page-header flex-column">
-
-      <div class="header-body text-center">
-
-        <h1 class="text-white text-uppercase">
-          Meet the Team
-        </h1>
-        <p class="text-lead text-white">
-          Explore the people who built and now run ES Profiler
-        </p>
+  <div class="padding-container">
+    <div class="wrapper">
+      <div class="top-container">
+        <div class="title-container">
+          <h1>Meet the team behind ESP</h1>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+            posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor
+            ac. Praesent non dolor leo. Donec eu ante vel eros faucibus
+            molestie.
+          </p>
+        </div>
+        <img src="@/assets/img/brain.svg" alt="brain" class="brain" />
       </div>
 
-    </esp-background>
-
-    <b-container class="py-8">
-
-      <h2 class="pt-10">
-        Threat-Centric Insight
-      </h2>
-
-      <p class="lead">
-        Cybersecurity is becoming ever more significant.
-        With threats that continue to evolve and finite security budgets, maximizing the return on your security investment has never been more important.
-      </p>
-
-      <p class="lead">
-        We were driven to start ESProfiler after identifying a common trend across enterprises. An inherent disconnect between the security assets an enterprise owned and the security assets they required.
-        Often seeing capability overlap, misconfiguration, and assets that simply failed to counter current threats. Security expenditure was missing efficiency leading to lower levels of overall security.
-      </p>
-
-      <p class="lead">
-        We realised that the inability to quantify what a security asset provided was at the core of this issue. If we could answer the question "What do my security assets provide?" we could create a foundation for objective comparison.
-        Overlaying threat intelligence, incidents, breach assessments, and more to create a platform for continuous security strategy and investment validation.
-      </p>
-
-    </b-container>
-
+      <div class="members-grid">
+        <TeamMember
+          position="Chief Executive Officer"
+          name="Liam Chen"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
+          linkedin="https://linkedin.com/joshlucpoll"
+          email="hello@joshlucpoll.com"
+          twitter="https://twitter.com/joshlucpoll"
+          facebook="https://facebook.com"
+          ><img
+            src="https://www.freeiconspng.com/thumbs/cat-png/cat-png-17.png"
+            alt="cat"
+            id="liam-chen-img"
+        /></TeamMember>
+        <TeamMember
+          is-right="true"
+          position="Chief Operating Officer"
+          name="Amalia Crouch"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
+          linkedin="https://linkedin.com/joshlucpoll"
+          email="hello@joshlucpoll.com"
+          facebook="https://facebook.com"
+          ><img
+            src="https://www.killarneycat.com/wp-content/uploads/sites/257/2022/04/9-copy.png"
+            alt="cat"
+            id="amalia-crouch-img"
+        /></TeamMember>
+        <TeamMember
+          position="Chief Technology Officer"
+          name="Justin Donovan"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
+          linkedin="https://linkedin.com/joshlucpoll"
+          email="hello@joshlucpoll.com"
+          ><img
+            src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png"
+            alt="cat"
+            id="justin-donovan-img"
+        /></TeamMember>
+        <TeamMember
+          is-right="true"
+          position="Board Advisor"
+          name="Rachelle Key"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
+          linkedin="https://linkedin.com/joshlucpoll"
+          email="hello@joshlucpoll.com"
+          twitter="https://twitter.com/joshlucpoll"
+          ><img
+            src="https://www.pngall.com/wp-content/uploads/2016/03/Cat-PNG.png"
+            alt="cat"
+            id="rachelle-key-img"
+        /></TeamMember>
+      </div>
+    </div>
   </div>
-
 </template>
 
-<style>
+<style lang="scss">
+#liam-chen-img {
+  position: absolute;
+  width: 120%;
+  object-fit: contain;
+  transform: rotate(-45deg) translate(40%, 15%);
+}
+#amalia-crouch-img {
+  position: absolute;
+  width: 120%;
+  object-fit: contain;
+  transform: rotate(-45deg) translate(0, 15%);
+}
+#justin-donovan-img {
+  position: absolute;
+  width: 120%;
+  object-fit: contain;
+  transform: rotate(-45deg) translate(-5%, 15%);
+}
+#rachelle-key-img {
+  position: absolute;
+  width: 100%;
+  object-fit: contain;
+  transform: rotate(-45deg) translate(20%, 20%);
+}
 
+.padding-container {
+  padding: 6rem var(--body-padding);
+
+  .wrapper {
+    position: relative;
+    max-width: 1920px;
+    min-height: calc(100vh - 400px);
+    margin: 0 auto;
+
+    .top-container {
+      margin: 5rem 0;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+
+      .title-container {
+        text-align: center;
+        max-width: 600px;
+      }
+    }
+
+    .brain {
+      filter: drop-shadow(0px 0px 75px #5b349d);
+      animation: breath 3s ease-in infinite alternate;
+      width: 18rem;
+    }
+
+    .members-grid {
+      display: grid;
+      gap: 4rem;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .padding-container {
+    .wrapper {
+      .top-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .title-container {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@keyframes breath {
+  from {
+    filter: drop-shadow(0px 0px 75px #5b349d);
+  }
+  to {
+    filter: drop-shadow(0px 0px 5px #5b349d);
+  }
+}
 </style>
+
+<script>
+import TeamMember from "../../components/TeamMember.vue";
+
+export default {
+  components: {
+    TeamMember
+  }
+};
+</script>
