@@ -11,7 +11,7 @@ let refs,
   vendorLocation,
   consumerLocation,
   vendorParagraphLocation;
-let cornerRoundnessRem = 2; // radius (rem)
+const cornerRoundnessRem = 2; // radius (rem)
 let cornerRoundness = convertRemToPixels(cornerRoundnessRem); // radius (px)
 
 function draw() {
@@ -175,18 +175,24 @@ export default {
 
 <template>
   <div class="padding-container">
+    <!-- Stars Animation WIP -->
+    <!--    <div id="stars" />-->
+    <!--    <div id="stars2" />-->
+    <!--    <div id="stars3" />-->
+
     <div class="wrapper">
       <div class="title-container">
-        <h1>The cyber security market is broken.</h1>
+        <h1>Security Investment Is Broken.</h1>
         <p class="subtitle">
-          ESProfiler provides a SaaS platform for
-          <span class="red">Vendors</span> and
-          <span class="white">Consumers</span> to work better together by
-          standardising the way cyber security is commercialised.
+          Enterprises are spending more and deploying more security products,
+          <br />
+          but breaches are still <span class="red">increasing!</span>
         </p>
       </div>
       <section class="vendors mobile-display">
-        <h2 ref="vendorM" class="red mb-0 mt-8">Vendors</h2>
+        <h2 ref="vendorM" class="red mb-0 mt-8">
+          Vendors
+        </h2>
         <p ref="vendorParagraph">
           can better articulate what their security solutions do in a meaningful
           way directly against the possible attacks the consumers face,
@@ -202,11 +208,13 @@ export default {
           src="@/assets/img/logo.png"
           alt="es profiler logo"
         />
-        <svg height="100%" width="100%"></svg>
+        <svg height="100%" width="100%" />
       </div>
       <div class="info-container">
         <section class="vendors desktop-display">
-          <h2 ref="vendorD" class="red">Vendors</h2>
+          <h2 ref="vendorD" class="red">
+            Vendors
+          </h2>
           <p>
             can better articulate what their security solutions do in a
             meaningful way directly against the possible attacks the consumers
@@ -216,7 +224,9 @@ export default {
           </p>
         </section>
         <section class="consumers">
-          <h2 ref="consumer" class="white">Consumers</h2>
+          <h2 ref="consumer" class="white">
+            Consumers
+          </h2>
           <p>
             can directly operationalise the product data provided by the vendors
             in ESProfiler’s SaaS Platform for a more seamless product adoption
@@ -226,7 +236,7 @@ export default {
           </p>
         </section>
       </div>
-      <canvas ref="canvas" class="introduction-canvas"></canvas>
+      <canvas ref="canvas" class="introduction-canvas" />
     </div>
   </div>
 </template>
@@ -258,6 +268,7 @@ export default {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      z-index: 1;
 
       h1 {
         color: #fff;
@@ -291,6 +302,7 @@ export default {
       display: flex;
       flex-direction: row;
       gap: 8rem;
+      z-index: 1;
 
       h2 {
         margin: 0;

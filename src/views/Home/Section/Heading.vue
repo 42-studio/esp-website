@@ -120,7 +120,11 @@
       border-radius: 50%;
       background: rgba(90, 52, 157, 0.5);
       z-index: -10;
-      box-shadow: 0px 0px 15.6rem 12rem rgba(90, 52, 157, 0.5);
+      box-shadow: 0px 0px 15.6rem 10rem rgba(90, 52, 157, 0.5);
+
+      animation-name: spotlight-movement;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
     }
   }
 
@@ -161,6 +165,21 @@
     font-size: 0.8rem;
     letter-spacing: 0.03rem;
     line-height: 1.2rem;
+  }
+}
+
+@keyframes spotlight-movement {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-35%, -35%);
+    box-shadow: 0px 0px 15.6rem 10rem rgba(101, 62, 171, 0.5);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
   }
 }
 

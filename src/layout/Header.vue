@@ -16,16 +16,53 @@
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
         <li class="nav-item">
           <router-link :to="{ name: 'index' }" custom v-slot="{ navigate }">
-            <b-button
-              @click="navigate"
-              role="link"
-              class="nav-link"
-              variant="link"
-            >
+            <b-button @click="navigate" role="link" class="nav-link" variant="link">
               Home
             </b-button>
           </router-link>
         </li>
+
+        <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
+
+          <template v-slot:title>
+
+            <router-link :to="{ name: 'about.story' }">
+              <button role="button" class="btn nav-link btn-link" data-toggle="dropdown">
+                <span class="nav-link-inner--text">Use Cases</span>
+                <i class="fa fa-chevron-down fa-lg" />
+              </button>
+            </router-link>
+
+          </template>
+
+          <template v-slot:default>
+            <router-link :to="{ name: 'use-case.ownership' }" class="dropdown-item">
+              <font-awesome-icon icon="fa-solid fa-boxes-stacked" />
+              What do we own?
+            </router-link>
+
+            <router-link :to="{ name: 'use-case.capability' }" class="dropdown-item">
+              <font-awesome-icon icon="fa-solid fa-shield-halved" />
+              What should it do?
+            </router-link>
+
+            <router-link :to="{ name: 'use-case.utilisation' }" class="dropdown-item">
+              <font-awesome-icon icon="fa-solid fa-circle-nodes" />
+              What is deployed?
+            </router-link>
+
+            <router-link :to="{ name: 'use-case.gaps-overlaps' }" class="dropdown-item">
+              <font-awesome-icon icon="fa-solid fa-ranking-star" />
+              Where are our gaps & overlaps?
+            </router-link>
+
+            <router-link :to="{ name: 'about.efficacy' }" class="dropdown-item">
+              <font-awesome-icon icon="fa-solid fa-bomb" />
+              Is it working?
+            </router-link>
+
+          </template>
+        </base-dropdown>
 
         <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
           <template v-slot:title>
@@ -44,26 +81,19 @@
           <template v-slot:default>
             <router-link :to="{ name: 'about.story' }" class="dropdown-item">
               <i class="fa fa-info" />
-              About us
+              Our Story
             </router-link>
 
             <router-link :to="{ name: 'about.team' }" class="dropdown-item">
-              <i class="fa-solid fa-users-line" />
+              <font-awesome-icon icon="fa-solid fa-people-group" />
               Team
             </router-link>
 
             <router-link :to="{ name: 'about.contact' }" class="dropdown-item">
-              <i class="fa fa-address-book" />
+              <font-awesome-icon icon="fa-solid fa-envelope" />
               Contact
             </router-link>
 
-            <router-link
-              :to="{ name: 'about.licensing' }"
-              class="dropdown-item"
-            >
-              <i class="fa fa-file" />
-              Licenses
-            </router-link>
           </template>
         </base-dropdown>
 
@@ -95,10 +125,10 @@ header {
 
   background: rgb(22, 12, 40, 0.6);
   background: linear-gradient(
-    180deg,
-    rgba(22, 12, 40, 1) 0%,
-    rgba(22, 12, 40, 0.5) 78%,
-    rgba(22, 12, 40, 0) 100%
+      180deg,
+      rgba(22, 12, 40, 1) 0%,
+      rgba(22, 12, 40, 0.5) 78%,
+      rgba(22, 12, 40, 0) 100%
   );
 }
 
@@ -138,15 +168,15 @@ header {
 </style>
 
 <script>
-import BaseNav from "@/components/BaseNav";
-import BaseDropdown from "@/components/BaseDropdown";
+import BaseNav from '@/components/BaseNav'
+import BaseDropdown from '@/components/BaseDropdown'
 
 export default {
-  name: "LayoutHeader",
+  name: 'LayoutHeader',
 
   components: {
     BaseNav,
     BaseDropdown
   }
-};
+}
 </script>
