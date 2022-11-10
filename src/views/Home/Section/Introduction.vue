@@ -174,7 +174,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div style="position: relative">
     <div class="stars" />
     <div class="stars" style="animation-delay: calc(var(--stars-speed) / 2)" />
     <div class="stars2" />
