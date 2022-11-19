@@ -3,68 +3,88 @@
     <div class="wrapper">
       <div class="top-container">
         <div class="title-container">
-          <h1>Meet the team behind ESP</h1>
+          <h1>Meet the Team</h1>
           <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-            posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor
-            ac. Praesent non dolor leo. Donec eu ante vel eros faucibus
-            molestie.
+            We are a team with extensive experience delivering security to enterprises.
+            We have sold, implemented and displaced a wide array of security products across the largest enterprises.
+            We have felt customers' pain and seen first-hand how security investment is broken.
+            <br>
+            We are passionate about solving it.
           </p>
         </div>
-        <img src="@/assets/img/brain.svg" alt="brain" class="brain" />
+        <img src="@/assets/img/brain.svg" alt="brain" class="brain">
       </div>
 
       <div class="members-grid">
         <TeamMember
-          position="Chief Executive Officer"
-          name="Liam Chen"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
-          linkedin="https://linkedin.com/joshlucpoll"
-          email="hello@joshlucpoll.com"
-          twitter="https://twitter.com/joshlucpoll"
-          facebook="https://facebook.com"
-          ><img
+          title="Co-Founder & CEO"
+          name="Louis Holt"
+          description="With over a decade of cyber security experience across government and enterprise.
+            Louis specialised in security value realisation, helping enterprise customers architect,
+            deploy and operationalise security products."
+          linkedin="https://www.linkedin.com/in/louis-holt-79738b113"
+        >
+          <img
             src="https://www.freeiconspng.com/thumbs/cat-png/cat-png-17.png"
             alt="cat"
             id="liam-chen-img"
-        /></TeamMember>
+          >
+        </TeamMember>
+
         <TeamMember
           is-right="true"
-          position="Chief Operating Officer"
-          name="Amalia Crouch"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
-          linkedin="https://linkedin.com/joshlucpoll"
-          email="hello@joshlucpoll.com"
-          facebook="https://facebook.com"
-          ><img
+          title="Co-Founder & Project Lead"
+          name="Marc Newton"
+          description="Over 16 year's experience in developing enterprise-class web applications. Marc brings his expertise in industry 4.0, analytics and indie game start-ups to produce our cutting-edge reactive web platforms"
+          linkedin="https://www.linkedin.com/in/marcandrewnewton/"
+        >
+          <img
             src="https://www.killarneycat.com/wp-content/uploads/sites/257/2022/04/9-copy.png"
             alt="cat"
             id="amalia-crouch-img"
-        /></TeamMember>
+          >
+        </TeamMember>
+
         <TeamMember
-          position="Chief Technology Officer"
-          name="Justin Donovan"
+          title="Board Advisor"
+          name="Sounil Yu"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
           linkedin="https://linkedin.com/joshlucpoll"
-          email="hello@joshlucpoll.com"
-          ><img
-            src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png"
+        >
+          <img
+            src="@/assets/img/Sounil.png"
             alt="cat"
             id="justin-donovan-img"
-        /></TeamMember>
+          >
+        </TeamMember>
+
         <TeamMember
           is-right="true"
-          position="Board Advisor"
-          name="Rachelle Key"
+          title="Board Advisor"
+          name="Amy Lemberger"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
           linkedin="https://linkedin.com/joshlucpoll"
-          email="hello@joshlucpoll.com"
-          twitter="https://twitter.com/joshlucpoll"
-          ><img
+        >
+          <img
             src="https://www.pngall.com/wp-content/uploads/2016/03/Cat-PNG.png"
             alt="cat"
             id="rachelle-key-img"
-        /></TeamMember>
+          >
+        </TeamMember>
+
+        <TeamMember
+          title="Board Advisor"
+          name="Paul Murgatroyd"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie."
+          linkedin="https://www.linkedin.com/in/paulmurgatroyd/"
+        >
+          <img
+            src="https://www.pngall.com/wp-content/uploads/2016/03/Cat-PNG.png"
+            alt="cat"
+            id="rachelle-key-img"
+          >
+        </TeamMember>
+
       </div>
     </div>
   </div>
@@ -162,11 +182,11 @@
 </style>
 
 <script>
-import TeamMember from "../../components/TeamMember.vue";
+import TeamMember from '../../components/TeamMember.vue'
 
 export default {
   components: {
     TeamMember
   }
-};
+}
 </script>

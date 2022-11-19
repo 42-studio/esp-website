@@ -5,21 +5,20 @@
         <div class="section-content">
           <div class="intro-text">
             <div class="m-auto">
-              <h3>Maximise Security ROI</h3>
+              <h3>Its Time To</h3>
 
               <h1>
-                A central exchange<br />to streamline the<br />cyber security<br />market.
+                Revolutionize Security Investment
               </h1>
             </div>
 
             <p class="lead mb-4">
-              Freedom from frustration, enabling vendors to align cyber security
-              solutions with consumer’s threat informed defence through
-              threat-centric methodology.
+              What if security procurement, inventory, utilisation, controls and incidents were continually linked to security threats.
+              How would that transform enterprise security strategy and investment?
             </p>
             <router-link :to="{ name: 'schedule.demo' }">
               <button>
-                Book a Demo
+                Lets Talk
               </button>
             </router-link>
           </div>
@@ -40,7 +39,8 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
+
 .introduction {
   position: relative;
   clear: both;
@@ -84,7 +84,7 @@
     h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      color: var(--secondary);
+      color: white;
     }
 
     p {

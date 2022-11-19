@@ -16,11 +16,16 @@ import {
   faCircleNodes,
   faRankingStar,
   faEnvelope,
-  faBomb
+  faBomb,
+  faDoorOpen,
+  faLayerGroup,
+  faScrewdriverWrench,
+  faBoxArchive
 } from '@fortawesome/free-solid-svg-icons'
 
 /* Add icons to the library */
-library.add(faPeopleGroup, faBoxesStacked, faShieldHalved, faCircleNodes, faRankingStar, faEnvelope, faBomb)
+library.add(faPeopleGroup, faBoxesStacked, faShieldHalved, faCircleNodes,
+  faRankingStar, faEnvelope, faBomb, faDoorOpen, faLayerGroup, faScrewdriverWrench, faBoxArchive)
 
 /* Add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

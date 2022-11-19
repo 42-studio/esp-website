@@ -1,31 +1,31 @@
 <script>
-function convertRemToPixels(rem) {
-  return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+function convertRemToPixels (rem) {
+  return rem * parseFloat(getComputedStyle(document.documentElement).fontSize)
 }
 
-let refs, canvas, ctx, circleLocations;
-const cornerRoundnessRem = 3.2; // radius (rem)
-let cornerRoundness = convertRemToPixels(cornerRoundnessRem); // radius (px)
+let refs, canvas, ctx, circleLocations
+const cornerRoundnessRem = 3.2 // radius (rem)
+let cornerRoundness = convertRemToPixels(cornerRoundnessRem) // radius (px)
 
-function draw() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.beginPath();
+function draw () {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  ctx.beginPath()
 
-  ctx.lineWidth = cornerRoundness / 5;
-  ctx.strokeStyle = "#160C28";
+  ctx.lineWidth = cornerRoundness / 5
+  ctx.strokeStyle = '#160C28'
 
-  let cornerRoundnessOffset;
+  let cornerRoundnessOffset
 
   for (let i = 0; i < circleLocations.length - 1; i++) {
-    const fromCircle = circleLocations[i];
-    const toCircle = circleLocations[i + 1];
-    cornerRoundnessOffset = cornerRoundness * -((i % 2) * 2 - 1);
+    const fromCircle = circleLocations[i]
+    const toCircle = circleLocations[i + 1]
+    cornerRoundnessOffset = cornerRoundness * -((i % 2) * 2 - 1)
 
     // move to bottom of circle
     ctx.moveTo(
       fromCircle.left + fromCircle.width / 2,
       fromCircle.top + fromCircle.height - 5
-    );
+    )
     // first vertical line
     ctx.lineTo(
       fromCircle.left + fromCircle.width / 2,
@@ -33,7 +33,7 @@ function draw() {
         toCircle.top - cornerRoundness * 2,
         fromCircle.top + fromCircle.height
       )
-    );
+    )
 
     // first curve
     ctx.quadraticCurveTo(
@@ -47,7 +47,7 @@ function draw() {
         toCircle.top - cornerRoundness,
         fromCircle.top + fromCircle.height
       )
-    );
+    )
 
     // horizontal line
     ctx.lineTo(
@@ -56,7 +56,7 @@ function draw() {
         toCircle.top - cornerRoundness,
         fromCircle.top + fromCircle.height
       )
-    );
+    )
 
     // draw line to next circle
     ctx.quadraticCurveTo(
@@ -67,18 +67,18 @@ function draw() {
       ),
       toCircle.left + toCircle.width / 2,
       toCircle.top + 5
-    );
+    )
 
-    cornerRoundnessOffset = cornerRoundness * ((i % 2) * 2 - 1);
+    cornerRoundnessOffset = cornerRoundness * ((i % 2) * 2 - 1)
   }
 
-  const lastCircle = circleLocations[circleLocations.length - 1];
+  const lastCircle = circleLocations[circleLocations.length - 1]
 
   // move to bottom of circle
   ctx.moveTo(
     lastCircle.left + lastCircle.width / 2,
     lastCircle.top + lastCircle.height - 5
-  );
+  )
 
   // vertical line
   ctx.lineTo(
@@ -87,7 +87,7 @@ function draw() {
       canvas.height / window.devicePixelRatio - cornerRoundness * 3,
       lastCircle.top + lastCircle.height
     )
-  );
+  )
 
   // first curve
   ctx.quadraticCurveTo(
@@ -101,7 +101,7 @@ function draw() {
       canvas.height / window.devicePixelRatio - cornerRoundness * 2,
       lastCircle.top + lastCircle.height
     )
-  );
+  )
 
   // horizontal line
   ctx.lineTo(
@@ -110,7 +110,7 @@ function draw() {
       canvas.height / window.devicePixelRatio - cornerRoundness * 2,
       lastCircle.top + lastCircle.height
     )
-  );
+  )
 
   // draw line to badge
   ctx.quadraticCurveTo(
@@ -121,61 +121,61 @@ function draw() {
     ),
     canvas.width / window.devicePixelRatio / 2,
     canvas.height / window.devicePixelRatio - cornerRoundness
-  );
+  )
 
   // vertical line
   ctx.lineTo(
     canvas.width / window.devicePixelRatio / 2,
     canvas.height / window.devicePixelRatio
-  );
+  )
 
-  ctx.stroke();
+  ctx.stroke()
 }
 
-function getCircleLocation() {
+function getCircleLocation () {
   circleLocations = Object.entries(refs)
-    .filter(([k, v]) => k.includes("circle"))
+    .filter(([k, v]) => k.includes('circle'))
     .map(([k, v]) => ({
       height: v.offsetHeight,
       width: v.offsetWidth,
       top: v.offsetTop,
       left: v.offsetLeft
-    }));
+    }))
 }
 
 export default {
-  mounted() {
-    refs = this.$refs;
-    canvas = this.$refs.canvas;
-    ctx = canvas.getContext("2d");
+  mounted () {
+    refs = this.$refs
+    canvas = this.$refs.canvas
+    ctx = canvas.getContext('2d')
 
-    window.addEventListener("resize", resizeCanvas, false);
+    window.addEventListener('resize', resizeCanvas, false)
 
-    function resizeCanvas() {
-      const scale = window.devicePixelRatio;
+    function resizeCanvas () {
+      const scale = window.devicePixelRatio
 
-      canvas.width = canvas.getBoundingClientRect().width * scale;
-      canvas.height = canvas.getBoundingClientRect().height * scale;
+      canvas.width = canvas.getBoundingClientRect().width * scale
+      canvas.height = canvas.getBoundingClientRect().height * scale
       // canvas.style.width = canvas.getBoundingClientRect().width + "px";
       // canvas.style.height = canvas.getBoundingClientRect().height + "px";
 
-      ctx.scale(scale, scale);
-      cornerRoundness = convertRemToPixels(cornerRoundnessRem);
+      ctx.scale(scale, scale)
+      cornerRoundness = convertRemToPixels(cornerRoundnessRem)
 
-      getCircleLocation();
-      draw();
+      getCircleLocation()
+      draw()
     }
 
-    resizeCanvas();
+    resizeCanvas()
   }
-};
+}
 </script>
 
 <template>
   <div class="understand-wrapper">
     <div class="understand-container">
       <h1 class="understanding-title">
-        Continuous Security<br />Investment Validation
+        Continuous Security<br>Investment Validation
       </h1>
 
       <p class="subtitle">
@@ -190,16 +190,17 @@ export default {
 
           <div class="text-container">
             <h2 class="title">
-              What do we own?
+              What security products do we own?
             </h2>
             <p class="subtitle">
               Today's security products don't just reside in security teams.
               Multiple business units utilising independent processes and
               systems make it hard to ascertain what security products an
               enterprise owns and the actual cost.
-            </p>
-            <p>
-              ESPRFOILER
+              <br><br>
+              ESPROFILER embeds into the enterprise procurement process to continually track security related contracts.
+              This provides a clear lens over what products you own when they expire and how much they cost,
+              unlocking immediate financial and inventory insight.
             </p>
           </div>
         </section>
@@ -208,13 +209,13 @@ export default {
           <div ref="circle-2" class="circle" />
           <div class="text-container">
             <h2 class="title">
-              What should it do?
+              What should my investment do?
             </h2>
             <p class="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-              posuere est. Cras consectetur nisi tellus, sed dapibus massa
-              auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus
-              molestie.
+              It's almost impossible for consumers to understand what security products do and the measurable
+              benefit they provide. Each week the market is filled with more buzzwords making it evermore
+              confusing to understand. This issue manifests in costly RFI/RFP processes and often poor
+              utilisation due to unclear benefits.
             </p>
           </div>
         </section>
@@ -339,6 +340,7 @@ export default {
             font-weight: 600;
             font-size: 2rem;
             margin: 0;
+            padding-bottom: 1rem;
           }
         }
       }

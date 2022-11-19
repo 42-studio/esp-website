@@ -4,9 +4,9 @@
     :style="{ 'grid-template-columns': isRight ? '5fr 3fr' : '3fr 5fr' }"
   >
     <div class="member-image" :style="{ order: isRight ? '2' : '1' }">
-      <div class="red-background"></div>
+      <div class="red-background" />
       <div class="mask">
-        <slot></slot>
+        <slot />
       </div>
     </div>
     <div
@@ -16,17 +16,21 @@
         order: isRight ? '1' : '2'
       }"
     >
-      <hr class="red-line" />
-      <h4 class="member-position">{{ position }}</h4>
-      <h4 class="member-name">{{ name }}</h4>
+      <hr class="red-line">
+      <h4 class="member-name">
+        {{ name }}
+      </h4>
+      <label class="member-position">
+        {{ title }}
+      </label>
+
       <transition name="fade">
         <p v-if="descriptionExpanded" class="member-description-expanded">
-          {{ description }}<br />
+          {{ description }}<br>
           <span
             class="read-more"
             @click="descriptionExpanded = !descriptionExpanded"
-            >Read less</span
-          >
+          >Read less</span>
         </p>
       </transition>
       <p class="member-description">
@@ -45,7 +49,7 @@
           target="_blank"
           class="d-block footer-links py-1"
         >
-          <i class="social-icon fa fa-linkedin brand"></i>
+          <i class="social-icon fa fa-linkedin brand" />
         </a>
         <a
           v-if="email"
@@ -53,7 +57,7 @@
           target="_blank"
           class="d-block footer-links py-1"
         >
-          <i class="social-icon fa fa-envelope"></i>
+          <i class="social-icon fa fa-envelope" />
         </a>
         <a
           v-if="twitter"
@@ -61,7 +65,7 @@
           target="_blank"
           class="d-block footer-links py-1"
         >
-          <i class="social-icon fa fa-twitter brand"></i>
+          <i class="social-icon fa fa-twitter brand" />
         </a>
         <a
           v-if="facebook"
@@ -69,7 +73,7 @@
           target="_blank"
           class="d-block footer-links py-1"
         >
-          <i class="social-icon fa fa-facebook brand"></i>
+          <i class="social-icon fa fa-facebook brand" />
         </a>
       </div>
     </div>
@@ -100,7 +104,7 @@
   }
 
   .red-background {
-    background-color: red;
+    background-color: #ececec;
     height: 60%;
     aspect-ratio: 1;
     border-radius: 1rem;
@@ -154,6 +158,11 @@
     overflow: hidden;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+
+  .member-position {
+    margin-top: 0rem;
+    font-size: .8rem;
   }
 
   .member-description-expanded {
@@ -212,20 +221,20 @@
 
 <script>
 export default {
-  data() {
-    return {
-      descriptionExpanded: false
-    };
-  },
   props: {
     isRight: String,
-    position: String,
+    title: String,
     name: String,
     description: String,
     linkedin: String,
     email: String,
     twitter: String,
     facebook: String
+  },
+  data () {
+    return {
+      descriptionExpanded: false
+    }
   }
-};
+}
 </script>
