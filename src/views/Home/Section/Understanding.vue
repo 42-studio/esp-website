@@ -179,7 +179,7 @@ export default {
       </h1>
 
       <p class="subtitle">
-        ESProfiler empowers security leaders to answer 5 powerful questions &
+        ESProfiler empowers security leaders to continually answer five powerful questions &
         make decisions with confidence.
       </p>
 
@@ -198,9 +198,12 @@ export default {
               systems make it hard to ascertain what security products an
               enterprise owns and the actual cost.
               <br><br>
-              ESPROFILER embeds into the enterprise procurement process to continually track security related contracts.
-              This provides a clear lens over what products you own when they expire and how much they cost,
-              unlocking immediate financial and inventory insight.
+              ESPROFILER embeds into the enterprise procurement process to continually track security-related contracts.
+              Contracts are indexed using an advanced security-aware search & analytics engine, providing a clear lens
+              over what products the enterprise owns when they expire and how much they cost.
+              <br><br>
+              Fusing contractual data with deep security understanding unlocks immediate financial and inventory insight
+              empowering C-level strategy.
             </p>
           </div>
         </section>
@@ -209,13 +212,12 @@ export default {
           <div ref="circle-2" class="circle" />
           <div class="text-container">
             <h2 class="title">
-              What should my investment do?
+              What should our investment do?
             </h2>
             <p class="subtitle">
-              It's almost impossible for consumers to understand what security products do and the measurable
-              benefit they provide. Each week the market is filled with more buzzwords making it evermore
-              confusing to understand. This issue manifests in costly RFI/RFP processes and often poor
-              utilisation due to unclear benefits.
+              Understanding what security products do and quantifying their benefit is almost impossible in a market
+              filled with buzzwords and a lack of standardisation. This issue ripples through enterprises and vendors.
+              Resulting in time-consuming RFI/RFPs and often poor adoption due to unclear definitions and benefits.
             </p>
           </div>
         </section>

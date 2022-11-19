@@ -246,7 +246,6 @@ export default {
               Create phenomenal security products, and work hard to win enterprise contracts only to see poor
               adoption and then lose out on renewals.
 
-
               can better articulate what their security solutions do in a
               meaningful way directly against the possible attacks the consumers
               face, mitigating the time, friction & frustration expressed in
