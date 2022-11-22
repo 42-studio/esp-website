@@ -196,7 +196,7 @@ export default {
               Today's security products don't just reside in security teams.
               Multiple business units utilising independent processes and
               systems make it hard to ascertain what security products an
-              enterprise owns and the actual cost.
+              enterprise owns and the cost.
               <br><br>
               ESPROFILER embeds into the enterprise procurement process to continually track security-related contracts.
               Contracts are indexed using an advanced security-aware search & analytics engine, providing a clear lens
@@ -216,8 +216,15 @@ export default {
             </h2>
             <p class="subtitle">
               Understanding what security products do and quantifying their benefit is almost impossible in a market
-              filled with buzzwords and a lack of standardisation. This issue ripples through enterprises and vendors.
-              Resulting in time-consuming RFI/RFPs and often poor adoption due to unclear definitions and benefits.
+              lacking standardisation. This ripples through enterprises, resulting in investment overlap and security
+              portfolios that fail to meet security requirements.
+              <br><br>
+              ESPROFLIER uses an industry-leading model to quantify what security products do with feature detail
+              against how attackers operate. Building on industry-recognised frameworks such as MITRE ATT&CK and NIST
+              to operationalise threat-informed defence in the enterprise.
+              <br><br>
+              Fusing security controls created by security teams with capabilities defined by our model produces a
+              comprehensive picture of what security investments should do from the threats an enterprise faces.
             </p>
           </div>
         </section>
@@ -323,7 +330,7 @@ export default {
 
         &.right {
           flex-direction: row-reverse;
-          text-align: right;
+          text-align: left;
           padding-left: 1.3rem;
         }
 

@@ -8,7 +8,7 @@
               <h3>Its Time To</h3>
 
               <h1>
-                Revolutionize Security Investment
+                Revolutionise Security Investment
               </h1>
             </div>
 
