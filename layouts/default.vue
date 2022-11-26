@@ -21,15 +21,26 @@
 
     <div class="relative grow">
 
-      <MainNavigation />
+      <elements-main-navigation />
 
-      <main class="overflow-x-clip pb-[30vh]">
+      <main class="overflow-x-clip pb-[15vh] lg:pb-[30vh]">
         <slot />
       </main>
 
       <div class="absolute bottom-0 left-0 right-0 -z-10">
         <div class="bg-footer flex items-end justify-center">
           <footer class="text-xs text-thin text-slate-500 p-5">
+
+            <h5 class="text-white font-weight-bold">
+              Newsletter
+            </h5>
+
+            <p>
+              Stay up-to date with our latest developments.
+            </p>
+
+
+
             ESPROFILER LIMITED, A COMPANY REGISTERED IN ENGLAND AND WALES WITH COMPANY NUMBER: 12711421, VAT NUMBER: 378676921
           </footer>
         </div>

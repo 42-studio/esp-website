@@ -26,7 +26,7 @@
       <div class="relative grow py-5">
 
         <div class="relative h-full mr-[55%] overflow-clip">
-          <path-bottom-right class="mt-[2px]" />
+          <elements-path-bottom-right class="mt-[2px]" />
         </div>
 
       </div>
@@ -36,7 +36,7 @@
     <div class="relative">
 
       <div class="absolute top-[-3.4rem] right-0 bottom-0 w-10/12 -z-10 overflow-clip ml-auto">
-        <path-top-right />
+        <elements-path-top-right />
       </div>
 
       <div class="max-w-2xl pb-24">

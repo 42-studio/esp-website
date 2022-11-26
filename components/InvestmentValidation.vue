@@ -40,7 +40,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
         <div class="inline-block w-6/12" />
 
         <div class="inline-block w-6/12 my-[-2px]">
-          <path-bottom-right  />
+          <elements-path-bottom-right  />
         </div>
 
       </div>
@@ -49,7 +49,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
         <div class="inline-block w-6/12 pl-6">
           <div class="relative h-full my-[-2px]">
-            <path-top-left />
+            <elements-path-top-left />
           </div>
         </div>
 
@@ -63,7 +63,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       <div class="v-pathway mx-auto" />
     </div>
 
-    <validation-section class="mt-5" :icon="ClipboardDocumentCheckIcon" title="What do we own?">
+    <elements-validation-section class="mt-5" :icon="ClipboardDocumentCheckIcon" title="What do we own?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         Today's security products don't just reside in security teams. Multiple business units utilising independent processes and systems make it hard to ascertain what security products an enterprise owns and the cost.
@@ -77,9 +77,9 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
         Fusing contractual data with deep security understanding unlocks immediate financial and inventory insight empowering C-level strategy.
       </p>
 
-    </validation-section>
+    </elements-validation-section>
 
-    <validation-section :icon="ClipboardDocumentListIcon" title="What should it do?">
+    <elements-validation-section :icon="ClipboardDocumentListIcon" title="What should it do?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         Understanding what security products do and quantifying their benefit is almost impossible in a market lacking standardisation. This ripples through enterprises, resulting in investment overlap and security portfolios that fail to meet security requirements.
@@ -93,25 +93,9 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
         Fusing security controls created by security teams with capabilities defined by our model produces a comprehensive picture of what security investments should do from the threats an enterprise faces.
       </p>
 
-    </validation-section>
+    </elements-validation-section>
 
-    <validation-section :icon="ClipboardDocumentListIcon" title="What is deployed?">
-
-      <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
-      </p>
-
-      <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
-      </p>
-
-      <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
-      </p>
-
-    </validation-section>
-
-    <validation-section :icon="ClipboardDocumentListIcon" title="Are there Gaps / Overlaps?">
+    <elements-validation-section :icon="ClipboardDocumentListIcon" title="What is deployed?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
@@ -125,9 +109,25 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
       </p>
 
-    </validation-section>
+    </elements-validation-section>
 
-    <validation-section :icon="ClipboardDocumentListIcon" title="Is it working?">
+    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Are there Gaps / Overlaps?">
+
+      <p class="my-8 text-lg leading-8 text-slate-300">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+      </p>
+
+      <p class="my-8 text-lg leading-8 text-slate-300">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+      </p>
+
+      <p class="my-8 text-lg leading-8 text-slate-300">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+      </p>
+
+    </elements-validation-section>
+
+    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Is it working?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
@@ -141,7 +141,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
       </p>
 
-    </validation-section>
+    </elements-validation-section>
 
     <div class="mb-4">
 
@@ -155,7 +155,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
       <div class="inline-block w-5/12 lg:w-3/12 my-[-2px] mr-auto pr-8 lg:pr-0">
         <div class="pl-6 h-[15vh]">
-          <path-bottom-left />
+          <elements-path-bottom-left />
         </div>
       </div>
 
@@ -166,7 +166,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       <div class="inline-block w-3/12" />
 
       <div class="inline-block w-3/12 mr-auto my-[-2px]">
-        <path-top-right class="aspect-square" />
+        <elements-path-top-right class="aspect-square" />
       </div>
 
     </div>

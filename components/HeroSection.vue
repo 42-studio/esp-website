@@ -68,7 +68,7 @@
         <div class="grow">
 
           <div class="h-full my-5 ml-[4rem] mr-5">
-            <path-bottom-left/>
+            <elements-path-bottom-left/>
           </div>
 
         </div>

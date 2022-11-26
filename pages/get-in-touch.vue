@@ -86,39 +86,39 @@ const submit = async () => {
 
           <div class="flex flex-col sm:space-x-8 sm:flex-row">
 
-            <input-field label="Given Name" name="firstName" :errors="form.errors" v-slot="props" class="grow">
+            <elements-input-field label="Given Name" name="firstName" :errors="form.errors" v-slot="props" class="grow">
               <input v-model="form.body.firstName" type="text" tabindex="1" placeholder="..." required v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Family Name" name="lastName" :errors="form.errors" v-slot="props" class="grow">
+            <elements-input-field label="Family Name" name="lastName" :errors="form.errors" v-slot="props" class="grow">
               <input v-model="form.body.lastName" type="text" tabindex="2" placeholder="..." required v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
           </div>
 
-          <input-field label="Your email" name="email" :errors="form.errors" v-slot="props">
+          <elements-input-field label="Your email" name="email" :errors="form.errors" v-slot="props">
             <input v-model="form.body.email" type="email" tabindex="3" placeholder="..." required v-bind="props" />
-          </input-field>
+          </elements-input-field>
 
-          <input-field label="Phone Number" name="phoneNumber" :errors="form.errors" v-slot="props">
+          <elements-input-field label="Phone Number" name="phoneNumber" :errors="form.errors" v-slot="props">
             <input v-model="form.body.phoneNumber" type="tel" tabindex="4" placeholder="..." required pattern="\d{11}" v-bind="props" />
-          </input-field>
+          </elements-input-field>
 
-          <input-field label="Company Name" name="companyName" :errors="form.errors" v-slot="props">
+          <elements-input-field label="Company Name" name="companyName" :errors="form.errors" v-slot="props">
             <input v-model="form.body.companyName" type="text" tabindex="5" placeholder="..." required v-bind="props" />
-          </input-field>
+          </elements-input-field>
 
-          <input-field label="Job Title" name="jobTitle" :errors="form.errors" v-slot="props">
+          <elements-input-field label="Job Title" name="jobTitle" :errors="form.errors" v-slot="props">
             <input v-model="form.body.jobTitle" type="text" tabindex="6" v-bind="props" required />
-          </input-field>
+          </elements-input-field>
 
         </div>
 
         <div class="grow">
 
-          <input-field label="Message" name="message" :errors="form.errors" v-slot="props">
+          <elements-input-field label="Message" name="message" :errors="form.errors" v-slot="props">
             <textarea v-model="form.body.message" rows="16" tabindex="8" placeholder="..." required v-bind="props" />
-          </input-field>
+          </elements-input-field>
 
           <div class="inline-flex items-center my-4 md:mt-8">
             <input v-model="form.marketing" id="input-newsletter" type="checkbox" class="form-check">
@@ -129,7 +129,7 @@ const submit = async () => {
 
       </div>
 
-      <div class="flex justify-end items-center">
+      <div class="flex justify-center md:justify-end items-center mt-10 md:mt-0">
         <button type="submit" class="ml-8 button-primary" :disabled="form.pending">Send Request</button>
       </div>
 

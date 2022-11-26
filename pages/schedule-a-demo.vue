@@ -82,45 +82,45 @@ const submit = async () => {
 
           <div class="w-6/12 pr-5">
 
-            <input-field label="Given Name" name="firstName" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Given Name" name="firstName" :errors="form.errors" v-slot="props">
               <input v-model="form.body.firstName" type="text" tabindex="1" placeholder="..." v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Your email" name="email" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Your email" name="email" :errors="form.errors" v-slot="props">
               <input v-model="form.body.email" type="email" tabindex="3" placeholder="..." v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Company Name" name="companyName" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Company Name" name="companyName" :errors="form.errors" v-slot="props">
               <input v-model="form.body.companyName" type="text" tabindex="5" placeholder="..." v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Company Size" name="companySize" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Company Size" name="companySize" :errors="form.errors" v-slot="props">
               <input v-model="form.body.companySize" type="text" tabindex="6" placeholder="..." v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Country or Region" name="country" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Country or Region" name="country" :errors="form.errors" v-slot="props">
               <input v-model="form.body.country" type="text" tabindex="7" placeholder="..." v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
           </div>
 
           <div class="w-6/12 pl-5">
 
-            <input-field label="Family Name" name="lastName" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Family Name" name="lastName" :errors="form.errors" v-slot="props">
               <input v-model="form.body.lastName" type="text" tabindex="2" placeholder="..." v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Phone Number" name="phoneNumber" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Phone Number" name="phoneNumber" :errors="form.errors" v-slot="props">
               <input v-model="form.body.phoneNumber" type="tel" tabindex="4" placeholder="..." pattern="\d{11}" v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Job Title" name="jobTitle" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Job Title" name="jobTitle" :errors="form.errors" v-slot="props">
               <input v-model="form.body.jobTitle" type="text" tabindex="6" v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
-            <input-field label="Message" name="message" :errors="form.errors" v-slot="props">
+            <elements-input-field label="Message" name="message" :errors="form.errors" v-slot="props">
               <textarea v-model="form.body.message" rows="6" tabindex="8" placeholder="..." v-bind="props" />
-            </input-field>
+            </elements-input-field>
 
           </div>
 
