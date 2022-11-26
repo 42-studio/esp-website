@@ -80,13 +80,21 @@ const submit = async () => {
 
       <form @submit.prevent="submit">
 
-      <div class="flex flex-wrap justify-center">
+      <div class="block md:flex md:justify-center md:space-x-8">
 
-        <div class="w-6/12 pr-5">
+        <div class="grow">
 
-          <input-field label="Given Name" name="firstName" :errors="form.errors" v-slot="props">
-            <input v-model="form.body.firstName" type="text" tabindex="1" placeholder="..." required v-bind="props" />
-          </input-field>
+          <div class="flex flex-col sm:space-x-8 sm:flex-row">
+
+            <input-field label="Given Name" name="firstName" :errors="form.errors" v-slot="props" class="grow">
+              <input v-model="form.body.firstName" type="text" tabindex="1" placeholder="..." required v-bind="props" />
+            </input-field>
+
+            <input-field label="Family Name" name="lastName" :errors="form.errors" v-slot="props" class="grow">
+              <input v-model="form.body.lastName" type="text" tabindex="2" placeholder="..." required v-bind="props" />
+            </input-field>
+
+          </div>
 
           <input-field label="Your email" name="email" :errors="form.errors" v-slot="props">
             <input v-model="form.body.email" type="email" tabindex="3" placeholder="..." required v-bind="props" />
@@ -104,30 +112,24 @@ const submit = async () => {
             <input v-model="form.body.jobTitle" type="text" tabindex="6" v-bind="props" required />
           </input-field>
 
-
         </div>
 
-        <div class="w-6/12 pl-5">
-
-          <input-field label="Family Name" name="lastName" :errors="form.errors" v-slot="props">
-            <input v-model="form.body.lastName" type="text" tabindex="2" placeholder="..." required v-bind="props" />
-          </input-field>
+        <div class="grow">
 
           <input-field label="Message" name="message" :errors="form.errors" v-slot="props">
             <textarea v-model="form.body.message" rows="16" tabindex="8" placeholder="..." required v-bind="props" />
           </input-field>
 
+          <div class="inline-flex items-center my-4 md:mt-8">
+            <input v-model="form.marketing" id="input-newsletter" type="checkbox" class="form-check">
+            <label for="input-newsletter" class="ml-2 text-sm font-medium text-slat-500">I would like to signup for the newsletter</label>
+          </div>
+
         </div>
 
       </div>
 
-      <div class="flex justify-between items-center">
-
-        <div class="inline-flex items-center">
-          <input v-model="form.marketing" id="input-newsletter" type="checkbox" class="form-check">
-          <label for="input-newsletter" class="ml-2 text-sm font-medium text-slat-500">I would like to signup for the newsletter</label>
-        </div>
-
+      <div class="flex justify-end items-center">
         <button type="submit" class="ml-8 button-primary" :disabled="form.pending">Send Request</button>
       </div>
 

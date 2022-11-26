@@ -1,6 +1,6 @@
 <template>
 
-  <div class="grow inline-flex items-center text-right lg:max-w-6xl mb-12">
+  <div class="flex items-center text-right xl:w-6/12 mb-16">
 
     <div class="grow pl-4 pr-8 space-y-4">
 
@@ -24,7 +24,7 @@
     </div>
 
     <div class="shrink">
-      <div class="p-1 w-44 sm:w-52 aspect-square ring-2 ring-violet-300 overflow-clip member">
+      <div class="p-1 w-44 aspect-square ring-2 ring-violet-300 overflow-clip member">
         <div class="member w-full h-full" :style="{ backgroundImage: `url(/img/team/${props.photo})` }" />
       </div>
     </div>

@@ -97,9 +97,7 @@
           <div class="v-pathway" />
         </div>
 
-        <div class="grow inline-flex items-center text-left my-8">
-          <div class="w-full" />
-        </div>
+        <div class="flex" />
 
       </div>
 
