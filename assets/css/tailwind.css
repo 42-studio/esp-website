@@ -20,6 +20,10 @@ input, optgroup, select, textarea {
     padding: 0;
 }
 
+main a {
+    @apply text-violet-400;
+}
+
 [type=checkbox], [type=radio] {
     print-color-adjust: exact;
     --tw-shadow: 0 0 #0000;
@@ -60,7 +64,7 @@ input, optgroup, select, textarea {
 }
 
 .button-primary {
-    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700;
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-violet-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-violet-700;
 }
 
 .container {

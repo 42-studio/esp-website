@@ -1,7 +1,4 @@
 <script setup>
-// noinspection JSUnresolvedFunction
-import InputField from '../components/InputField'
-
 const config = useRuntimeConfig()
 
 const form = reactive({
@@ -37,6 +34,7 @@ const submit = async () => {
 
     form.response = data
     form.pending = false
+    await navigateTo('/request-success')
   } catch (error) {
     console.info('error?.response')
     console.dir(error?.response?._data)
@@ -45,7 +43,6 @@ const submit = async () => {
     form.pending = false
   }
 
-  console.log('form', form)
 }
 
 </script>

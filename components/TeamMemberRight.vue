@@ -9,7 +9,7 @@
         </p>
       </blockquote>
       <figcaption class="font-medium">
-        <div class="text-indigo-400">
+        <div class="text-violet-400">
           {{ props.name }}
         </div>
         <div class="text-slate-400">
@@ -19,7 +19,7 @@
     </div>
 
     <div class="shrink">
-      <div class="p-1 w-52 h-52 ring-2 ring-indigo-300 overflow-clip member">
+      <div class="p-1 w-52 h-52 ring-2 ring-violet-300 overflow-clip member">
         <div class="member w-full h-full" :style="{ backgroundImage: `url(/img/team/${props.photo})` }" />
       </div>
     </div>
