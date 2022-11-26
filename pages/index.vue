@@ -1,6 +1,6 @@
 <template>
 
-  <div class="container relative mt-[15vh]">
+  <div class="container relative mt-[10vh]">
 
     <HeroSection />
 

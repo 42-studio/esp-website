@@ -29,8 +29,8 @@
           Over a decade of cyber security experience across government and enterprise. Louis specialised in security value realisation, helping enterprise clients architect, deploy &amp; operationalise security products
         </team-member-left>
 
-        <div class="shrink hidden xl:inline-block">
-          <div class="w-0.5 h-48 mx-auto bg-linear-v-gradient" />
+        <div class="h-36 hidden xl:block">
+          <div class="v-pathway" />
         </div>
 
         <team-member-right name="Marc Newton" title="Co-Founder & Project Lead" photo="marc-newton.jpg" >
@@ -39,14 +39,14 @@
 
       </div>
 
-      <div class="block xl:flex">
+      <div class="block xl:flex items-center">
 
         <team-member-left name="Adrian Taylor" title="Industry Advisor" photo="adrian-taylor.jpg">
           Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
         </team-member-left>
 
-        <div class="shrink hidden xl:inline-block">
-          <div class="w-0.5 h-48 mx-auto bg-linear-v-gradient" />
+        <div class="h-36 hidden xl:block">
+          <div class="v-pathway" />
         </div>
 
         <team-member-right name="Ed Stirzaker" title="Sales Advisor" photo="ed-stirzaker.jpg" >
@@ -55,14 +55,14 @@
 
       </div>
 
-      <div class="block xl:flex">
+      <div class="block xl:flex items-center">
 
         <team-member-left name="Paul Murgatroyd" title="Product Advisor" photo="paul-murgatroyd.jpg">
           Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
         </team-member-left>
 
-        <div class="shrink hidden xl:inline-block">
-          <div class="w-0.5 h-48 mx-auto bg-linear-v-gradient" />
+        <div class="h-36 hidden xl:block">
+          <div class="v-pathway" />
         </div>
 
         <team-member-right name="Edward Parsons" title="Commercials" photo="edward-parsons.jpg" >
@@ -71,14 +71,14 @@
 
       </div>
 
-      <div class="block xl:flex">
+      <div class="block xl:flex items-center">
 
         <team-member-left name="Sounil Yu" title="Expert Advisor" photo="sounil-yu.jpg">
           Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
         </team-member-left>
 
-        <div class="shrink hidden xl:inline-block">
-          <div class="w-0.5 h-48 mx-auto bg-linear-v-gradient" />
+        <div class="h-36 hidden xl:block">
+          <div class="v-pathway" />
         </div>
 
         <team-member-right name="Amy Lemberger" title="CISO Advisor" photo="amy-lemberger.jpg" >
@@ -87,18 +87,18 @@
 
       </div>
 
-      <div class="block xl:flex">
+      <div class="block xl:flex items-center">
 
         <team-member-left name="Andy Bokor" title="Start-up Advisor" photo="andy-bokor.png">
           Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
         </team-member-left>
 
-        <div class="shrink hidden xl:inline-block">
-          <div class="w-0.5 h-48 mx-auto bg-linear-v-gradient" />
+        <div class="h-36 hidden xl:block">
+          <div class="v-pathway" />
         </div>
 
         <div class="grow inline-flex items-center text-left my-8">
-          <div class="grow" />
+          <div class="w-full" />
         </div>
 
       </div>
