@@ -6,7 +6,7 @@
 
     <FeatureSection />
 
-    <TwoSides />
+<!--    <TwoSides />-->
 
     <InvestmentValidation />
 

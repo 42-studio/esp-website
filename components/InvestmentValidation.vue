@@ -20,10 +20,10 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </div>
 
-    <div class="w-6/12 mx-auto text-center">
+    <div class="lg:w-6/12 mx-auto text-center">
 
       <h2 class="text-2xl font-bold tracking-tight sm:text-5xl">
-        Continuous Security
+        Continuous Security<br/>
         Investment Validation
       </h2>
 
@@ -39,7 +39,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
         <div class="inline-block w-6/12" />
 
-        <div class="relative inline-block w-6/12 overflow-clip my-[-2px]">
+        <div class="inline-block w-6/12 my-[-2px]">
           <path-bottom-right  />
         </div>
 
@@ -48,7 +48,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       <div class="flex h-[15vh] w-6/12 mr-auto">
 
         <div class="inline-block w-6/12 pl-6">
-          <div class="relative h-full overflow-clip my-[-2px]">
+          <div class="relative h-full my-[-2px]">
             <path-top-left />
           </div>
         </div>
@@ -151,24 +151,22 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </div>
 
-    <div class="flex h-[15vh] mr-auto">
+    <div class="flex mr-auto">
 
-      <div class="inline-block w-3/12 overflow-clip my-[-2px] mr-auto">
-        <div class="relative h-full pl-6">
+      <div class="inline-block w-5/12 lg:w-3/12 my-[-2px] mr-auto pr-8 lg:pr-0">
+        <div class="pl-6 h-[15vh]">
           <path-bottom-left />
         </div>
       </div>
 
     </div>
 
-    <div class="flex h-[15vh] mr-auto">
+    <div class="mr-auto hidden lg:flex">
 
-      <div class="inline-block w-3/12 overflow-clip" />
+      <div class="inline-block w-3/12" />
 
-      <div class="inline-block w-3/12 mr-auto overflow-clip my-[-2px]">
-        <div class="relative h-full">
-          <path-top-right />
-        </div>
+      <div class="inline-block w-3/12 mr-auto my-[-2px]">
+        <path-top-right class="aspect-square" />
       </div>
 
     </div>

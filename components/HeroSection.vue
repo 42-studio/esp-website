@@ -67,7 +67,7 @@
 
         <div class="grow">
 
-          <div class="relative overflow-clip h-full my-5 ml-[4rem] mr-5">
+          <div class="h-full my-5 ml-[4rem] mr-5">
             <path-bottom-left/>
           </div>
 

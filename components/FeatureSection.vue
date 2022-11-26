@@ -15,7 +15,7 @@
       </svg>
     </div>
 
-    <div class="flex flex-col container">
+    <div class="flex flex-col">
 
       <div class="flex">
 
