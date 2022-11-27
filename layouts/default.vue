@@ -27,9 +27,9 @@
         <slot />
       </main>
 
-      <div class="absolute bottom-0 left-0 right-0 -z-10">
-        <div class="bg-footer flex items-end justify-center">
-          <footer class="text-xs text-thin text-slate-500 p-5">
+      <div class=bg-footer />
+
+      <footer class="text-xs text-thin text-slate-500 p-5">
 
             <h5 class="text-white font-weight-bold">
               Newsletter
@@ -40,11 +40,8 @@
             </p>
 
 
-
-            ESPROFILER LIMITED, A COMPANY REGISTERED IN ENGLAND AND WALES WITH COMPANY NUMBER: 12711421, VAT NUMBER: 378676921
-          </footer>
-        </div>
-      </div>
+        ESPROFILER LIMITED, Registered in England &amp; Wales | Company No. 12711421 | VAT No. 378676921
+      </footer>
 
     </div>
 

@@ -24,6 +24,16 @@ main a {
     @apply text-violet-400;
 }
 
+footer {
+    @apply max-w-[2000px] mx-auto;
+}
+
+.bg-footer {
+    @apply h-[50vw] max-h-[1000px] max-w-[2000px] bg-no-repeat bg-cover mx-auto absolute bottom-0 left-0 right-0 -z-10;
+    background-image: url('@/assets/img/footer-mesh.png');
+    background-position: center bottom;
+}
+
 [type=checkbox], [type=radio] {
     print-color-adjust: exact;
     --tw-shadow: 0 0 #0000;
@@ -63,8 +73,13 @@ main a {
     @apply w-6 h-6 rounded text-blue-600 bg-gray-900 bg-opacity-50 border-gray-600 ring-offset-gray-800;
 }
 
+.hover-rise {
+    @apply hover:-translate-y-0.5 transition motion-reduce:hover:translate-y-0 motion-reduce:transition-none;
+}
+
 .button-primary {
     @apply inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-violet-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-violet-700;
+    @apply hover:-translate-y-0.5 transition motion-reduce:hover:translate-y-0 motion-reduce:transition-none;
 }
 
 .container {
@@ -79,12 +94,6 @@ main a {
     border-radius: 100%;
     background-position: center center;
     background-size: cover;
-}
-
-.bg-footer {
-    @apply h-[50vw] max-h-[1000px] max-w-[2000px] bg-no-repeat bg-cover rounded-3xl mx-auto;
-    background-image: url('@/assets/img/footer-mesh.png');
-    background-position: center bottom;
 }
 
 .breath {

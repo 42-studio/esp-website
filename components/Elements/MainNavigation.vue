@@ -6,7 +6,7 @@
 
       <div class="flex items-center justify-between py-6 justify-start space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
-          <nuxt-link to="/">
+          <nuxt-link to="/" class="hover-rise">
             <span class="sr-only">ESProfiler Ltd.</span>
             <img class="h-4 w-auto sm:h-8" src="@/assets/img/ESP-TEXT.svg" alt="" />
           </nuxt-link>

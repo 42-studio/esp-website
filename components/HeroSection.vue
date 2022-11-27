@@ -49,7 +49,7 @@
 
             <div class="mt-8">
 
-              <nuxt-link href="/schedule-a-demo" class="inline-block rounded-lg bg-violet-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-violet-600 hover:bg-violet-700 hover:ring-violet-700">
+              <nuxt-link href="/schedule-a-demo" class="button-primary">
                 Lets Talk
                 <span class="text-violet-200 ml-2" aria-hidden="true">&rarr;</span>
               </nuxt-link>
