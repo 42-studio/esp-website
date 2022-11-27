@@ -11,7 +11,7 @@
           <defs>
             <linearGradient id="esp39xu3" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
               <stop offset="0" style="stop-color: #79349c;" />
-              <stop offset="1" style="stop-color: #62a1cb;"  />
+              <stop offset="1" style="stop-color: #62a1cb;" />
             </linearGradient>
           </defs>
         </svg>
@@ -29,18 +29,35 @@
 
       <div class=bg-footer />
 
-      <footer class="text-xs text-thin text-slate-500 p-5">
+      <footer class="pb-5 md:pb-10">
 
-            <h5 class="text-white font-weight-bold">
-              Newsletter
-            </h5>
+        <div class="container block md:flex p-5 w-full items-end">
 
-            <p>
-              Stay up-to date with our latest developments.
-            </p>
+          <div class="grow">
 
+            <div style="text-shadow: rgba(20,20,20, 0.5) 3px 3px 14px;">
 
-        ESPROFILER LIMITED, Registered in England &amp; Wales | Company No. 12711421 | VAT No. 378676921
+              <h5 class="text-2xl text-white font-weight-bold">
+                Newsletter
+              </h5>
+
+              <p class="text-sm mb-2 text-gray-400">
+                Stay up-to date with our latest developments.
+              </p>
+
+            </div>
+
+            <dialog-newsletter-signup style="box-shadow: rgba(20,20,20, 0.5) 3px 3px 14px;" />
+
+          </div>
+
+          <div class="text-xs text-thin text-right text-gray-400 grow pt-5">
+            ESPROFILER LIMITED, Registered in England &amp; Wales<br />
+            Company No. 12711421 | VAT No. 378676921
+          </div>
+
+        </div>
+
       </footer>
 
     </div>

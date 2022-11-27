@@ -96,6 +96,33 @@ footer {
     background-size: cover;
 }
 
+.v-pathway {
+    @apply w-0 h-full border-2 border-violet-600;
+}
+
+.h-pathway {
+    @apply h-0 w-full border-2 border-violet-600;
+}
+
+.subscriber {
+    @apply inline-flex;
+}
+
+.subscriber input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.subscriber button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.subscriber button:disabled {
+    cursor: not-allowed;
+    @apply bg-gray-600;
+}
+
 .breath {
     filter: drop-shadow(0px 0px 15px #0f111a);
     animation: breath 1.5s ease-in infinite alternate;
@@ -104,14 +131,6 @@ footer {
 .breath-slate {
     filter: drop-shadow(0px 0px 15px #5b349d);
     animation: breath-slate 3s ease-in infinite alternate;
-}
-
-.v-pathway {
-    @apply w-0 h-full border-2 border-violet-600;
-}
-
-.h-pathway {
-    @apply h-0 w-full border-2 border-violet-600;
 }
 
 @keyframes breath {
