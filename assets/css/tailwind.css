@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    color-scheme: only dark
+}
 
 html {
     background: linear-gradient(149deg, rgb(43, 49, 70) 0%, rgba(30,29,44,1) 38%, rgba(13,17,22,1) 100%);
