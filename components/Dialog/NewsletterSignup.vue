@@ -63,9 +63,9 @@ const subscribe = async () => {
 
 <template>
 
-  <div v-if="hasStorage">
+  <div>
 
-    <template v-if="form.subscribed.email">
+    <template v-if="form.subscribed.email.length">
 
       Thank you for registering your interest.<br>
       <small>You are signed up to receive newsletters.</small>

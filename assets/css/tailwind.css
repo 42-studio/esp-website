@@ -1,6 +1,12 @@
+@import 'animate.css/animate.compat.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    color-scheme: only dark
+}
 
 html {
     background: linear-gradient(149deg, rgb(43, 49, 70) 0%, rgba(30,29,44,1) 38%, rgba(13,17,22,1) 100%);
@@ -121,6 +127,25 @@ footer {
 .subscriber button:disabled {
     cursor: not-allowed;
     @apply bg-gray-600;
+}
+
+/*.animation {*/
+/*    animation-iteration-count: 1 !important;*/
+/*    animation-fill-mode: both !important;*/
+/*    animation-play-state: paused !important;*/
+/*}*/
+
+/*.animated {*/
+/*    animation-delay: calc(var(--scroll) * -1s) !important;*/
+/*}*/
+
+.intersection > div {
+    animation-play-state: paused !important;
+}
+
+.intersection.animated > div {
+    animation-play-state: running !important;
+    /*@apply animation;*/
 }
 
 .breath {

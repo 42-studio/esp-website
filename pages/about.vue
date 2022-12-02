@@ -13,20 +13,20 @@
         <h2 class="text-2xl font-bold tracking-tight mt-20">Threat-Centric Insight</h2>
 
         <p class="mt-6 text-slate-300 leading-8 text-lg">
-          Cybersecurity is becoming ever more significant. With threats that continue to evolve and finite security budgets,
-          maximizing the return on your security investment has never been more important.
+          Cyber security is becoming ever more significant. Threats that continue to evolve and finite security budgets,
+          maximizing the return on security investments has never been more important.
         </p>
 
-        <h2 class="text-2xl font-bold tracking-tight mt-20">Actionable data helps you manage security portfolios</h2>
+        <h2 class="text-2xl font-bold tracking-tight mt-20">Actionable data helps manage security portfolios</h2>
 
         <p class="mt-6 text-slate-300 leading-8 text-lg">
-          We were driven to start ESProfiler after identifying a common trend across enterprises. An inherent disconnect between the security assets an enterprise owned and the security assets they required. Often seeing capability overlap,
-          misconfiguration, and assets that simply failed to counter current threats. Security expenditure was missing efficiency leading to lower levels of overall security.
+          The founding of ESProfiler was driven from hands-on industry experiences revealing a common trend of an inherent disconnect across enterprises, from the security assets owned to the security assets required. Often capability overlap,
+          misconfiguration and assets failing to counter current threats is continuously observed. Security expenditure misses efficiency leading to lower levels of overall security.
         </p>
 
         <p class="mt-6 text-slate-300 leading-8 text-lg">
-          We realised that the inability to quantify what a security asset provided was at the core of this issue. If we could answer the question "What do my security assets provide?" we could create a foundation for objective comparison.
-          Overlaying threat intelligence, incidents, breach assessments, and more to create a platform for continuous security strategy and investment validation.
+          Our founders realised the inability for enterprises to quantify what security assets provide is at the heart of the issues around portfolio management. By answering the question; &quot;What do my security assets provide?&quot; the foundation for objective comparison can be built.
+          Overlaying threat intelligence, incidents, breach assessments, and more in a platform that delivers continuous security strategy and investment validation.
         </p>
 
       </div>
