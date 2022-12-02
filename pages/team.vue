@@ -10,8 +10,10 @@
         </h1>
 
         <p class="mt-6 text-lg leading-8 text-slate-300">
-          Our team consists of extensive experience delivering security to enterprises; we have sold, implemented and displaced a wide array of security products across the largest enterprises. We have first-hand experienced with consumers pain when investing in security.<br/>
-          We are driven by our passion to develop a solution to the cyber market pain.
+          We are a team with extensive experience delivering security to enterprises. Together we have sold,
+          implemented and displaced a wide array of security products across the largest enterprises.
+          We have first-hand experience with customers' pain when investing in and realising value from security.
+          Our passion has driven us to develop a solution to the pain.
         </p>
       </div>
 
