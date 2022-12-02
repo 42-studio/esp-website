@@ -6117,6 +6117,7 @@ __metadata:
     "@heroicons/vue": ^2.0.13
     "@nuxtjs/tailwindcss": ^6.1.3
     nuxt: 3.0.0-rc.13
+    vue-writer: ^1.2.0
   languageName: unknown
   linkType: soft
 
@@ -7194,6 +7195,15 @@ __metadata:
   peerDependencies:
     vue: ^3.2.0
   checksum: c7f0156ac03a9561d110f5ff778121eee7c8c154be6ec5064558ba22ab5237db36f29ffffc95cc16d692cc68a26df0c434f395401c0e3b48f782c7bed51391c6
+  languageName: node
+  linkType: hard
+
+"vue-writer@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "vue-writer@npm:1.2.0"
+  peerDependencies:
+    vue: ^3.0.5
+  checksum: a480c347b3f90e470b11c8bcec86b3aadfe6f1aeaef8e75760d54880a858a0501e650a86c7baa9c84ea692cb8c8e3c01fc37c81d96bff277e5e7f807268e3fbd
   languageName: node
   linkType: hard
 

@@ -1,3 +1,19 @@
+<script>
+import VueWriter from "vue-writer"
+
+export default {
+  components:{
+    VueWriter
+  },
+  data() {
+    return {
+      typerArray: ['Procurement...', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
+    }
+  }
+}
+
+</script>
+
 <template>
 
   <div class="relative">
@@ -43,7 +59,10 @@
             </h1>
 
             <p class="mt-6 text-lg leading-8 text-slate-300">
-              What if security procurement, inventory, utilisation, controls and incidents were continually linked to security threats.
+              What if you continually combined security <VueWriter :array="typerArray" :caret="underscore"/>
+              with security threats?
+            </p>
+            <p class="mt-6 text-lg leading-8 text-slate-300">
               How would that transform enterprise security strategy and investment?
             </p>
 

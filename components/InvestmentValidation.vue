@@ -15,7 +15,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
     <div class="text-center mb-10">
 
       <div class="shrink inline-block rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
-        The Questions?
+        The Solution!
       </div>
 
     </div>
@@ -28,7 +28,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       </h2>
 
       <p class="m-8 text-lg leading-8 text-slate-300">
-        ESProfiler empowers security leaders to continually answer five powerful questions & make decisions with confidence.
+        ESProfiler empowers security leaders to continually answer five powerful questions and make decisions with confidence.
       </p>
 
     </div>
@@ -66,15 +66,19 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
     <elements-validation-section class="mt-5" :icon="ClipboardDocumentCheckIcon" title="What do we own?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Today's security products don't just reside in security teams. Multiple business units utilising independent processes and systems make it hard to ascertain what security products an enterprise owns and the cost.
+        Today's security products don't just reside in security teams. Multiple business units utilising independent
+        processes and systems make it hard to ascertain what security products an enterprise owns and the cost.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        ESPROFILER embeds into the enterprise procurement process to continually track security-related contracts. Contracts are indexed using an advanced security-aware search & analytics engine, providing a clear lens over what products the enterprise owns when they expire and how much they cost.
+        ESProfiler embeds into the enterprise procurement process to continually track security-related contracts.
+        Contracts are indexed using an advanced security-aware search & analytics engine, providing a clear lens over
+        what products the enterprise owns when they expire and how much they cost.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Fusing contractual data with deep security understanding unlocks immediate financial and inventory insight empowering C-level strategy.
+        Fusing contractual data with deep security understanding unlocks immediate financial and inventory insight
+        empowering C-level strategy.
       </p>
 
     </elements-validation-section>
@@ -82,15 +86,20 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
     <elements-validation-section :icon="ClipboardDocumentListIcon" title="What should it do?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Understanding what security products do and quantifying their benefit is almost impossible in a market lacking standardisation. This ripples through enterprises, resulting in investment overlap and security portfolios that fail to meet security requirements.
+        Understanding what security products do and quantifying their benefit is almost impossible in a market lacking
+        standardisation. This ripples through enterprises, resulting in investment overlap and security portfolios
+        that fail to meet security requirements.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        ESPROFILER uses an industry-leading model to quantify what security products do with feature detail against how attackers operate. Building on industry-recognised frameworks such as MITRE ATT&CK and NIST to operationalise threat-informed defence in the enterprise.
+        ESProfiler uses an industry-leading model to quantify what security products do with feature-level detail
+        against how attackers operate. Building on industry-recognised frameworks such as MITRE ATT&CK and NIST to
+        operationalise threat-informed defence in the enterprise.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Fusing security controls created by security teams with capabilities defined by our model produces a comprehensive picture of what security investments should do from the threats an enterprise faces.
+        Fusing security controls created by security teams with capabilities defined by ESProfilers model produces a
+        comprehensive picture of what security investments should do from the threats an enterprise faces.
       </p>
 
     </elements-validation-section>
@@ -98,6 +107,26 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
     <elements-validation-section :icon="ClipboardDocumentListIcon" title="What is deployed?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
+        There is a disconnect between the security capability enterprises acquire and the capability they subsequently
+        deploy. This issue causes hidden waste from budgets and incidents from poor security capability utilisation.
+      </p>
+
+      <p class="my-8 text-lg leading-8 text-slate-300">
+        ESProfiler relates product features to security capability. Blending this data with automated usage assertations
+        from product owners enables ESProfiler to highlight unused products/features with security
+        implications and financial loss.
+      </p>
+
+      <p class="my-8 text-lg leading-8 text-slate-300">
+        Continually showing the delta between security capability acquired and security capability
+        achieved on the ground.
+      </p>
+
+    </elements-validation-section>
+
+    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Where are our gaps & overlaps?">
+
+      <p class="my-8 text-lg leading-8 text-slate-300">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
       </p>
 
@@ -111,34 +140,22 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </elements-validation-section>
 
-    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Are there Gaps / Overlaps?">
+    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Is it working & relevant?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+        With threat actors continuously evolving, enterprises face a continual flow of security incidents.
+        Understanding if security products are working and are continually relevant against the latest threats is
+        challenging, with unclear definitions of what security products should do.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus,
+        sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
-      </p>
-
-    </elements-validation-section>
-
-    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Is it working?">
-
-      <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
-      </p>
-
-      <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
-      </p>
-
-      <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus, sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus,
+        sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
       </p>
 
     </elements-validation-section>
