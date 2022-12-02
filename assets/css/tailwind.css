@@ -1,4 +1,4 @@
-@import 'animate.css/animate.min.css';
+@import 'animate.css/animate.compat.css';
 
 @tailwind base;
 @tailwind components;
@@ -139,16 +139,13 @@ footer {
 /*    animation-delay: calc(var(--scroll) * -1s) !important;*/
 /*}*/
 
-#product-preview > div {
-    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */;
-    animation-play-state: paused;
+.intersection > div {
+    animation-play-state: paused !important;
 }
 
-.animate__animated > div {
+.intersection.animated > div {
     animation-play-state: running !important;
     /*@apply animation;*/
-
 }
 
 .breath {

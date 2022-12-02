@@ -1,28 +1,20 @@
 <script setup>
 import VueWriter from 'vue-writer'
+import { useIntersectionObserver } from '../composables/IntersectionObserver.js'
+
+const observables = ref(null)
+useIntersectionObserver(observables)
 
 const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
-
-const section = ref(null)
-const observer = inject('intersectionObserver')
-
-onMounted(() => {
-  observer.observe(section.value.querySelector('#product-preview'))
-})
-
-onBeforeUnmount(() => {
-  observer.unobserve(section.value.querySelector('#product-preview'))
-})
-
 </script>
 
 <template>
 
-  <div class="relative" ref="section">
+  <section class="relative" ref="observables">
 
     <div>
 
-      <div class="w-6/12 mx-auto md:mr-0">
+      <div class="w-6/12 mx-auto md:mr-0 animated delay-1s zoomIn">
 
         <svg class="mx-auto breath-slate" width="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
@@ -50,18 +42,18 @@ onBeforeUnmount(() => {
 
         <div class="shrink">
 
-          <div class="inline-block mb-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
+          <div class="inline-block mb-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200 animated delay-2s fadeInLeft">
             It's Time To
           </div>
 
-          <div class=" max-w-2xl">
+          <div class=" max-w-2xl animated delay-3s fadeInUp">
 
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
               Revolutionize<br />Security<br />Investment
             </h1>
 
             <p class="mt-6 text-lg leading-8 text-slate-300">
-              What if you continually fused security <VueWriter :array="typerArray" :caret="underscore"/>
+              What if you continually fused security <vue-writer :array="typerArray" class="inline-block font-bold"/><span class="animated flash infinite -ml-1">|</span><br/>
               against security threats?
             </p>
             <p class="mt-6 text-lg leading-8 text-slate-300">
@@ -70,7 +62,7 @@ onBeforeUnmount(() => {
 
             <div class="mt-8">
 
-              <nuxt-link href="/schedule-a-demo" class="button-primary">
+              <nuxt-link href="/schedule-a-demo" class="button-primary animated delay-5s pulse">
                 Lets Talk
                 <span class="text-violet-200 ml-2" aria-hidden="true">&rarr;</span>
               </nuxt-link>
@@ -89,16 +81,16 @@ onBeforeUnmount(() => {
         <div class="grow">
 
           <div class="h-full my-5 ml-[4rem] mr-5">
-            <elements-path-bottom-left/>
+            <elements-path-bottom-left id="hero-line-1"/>
           </div>
 
         </div>
 
       </div>
 
-      <div class="relative lg:pl-32" id="product-preview">
+      <div class="relative lg:pl-32 intersection">
 
-        <div class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
+        <div id="product-preview" class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
           <img src="@/assets/img/previews/CapabilityCards.jpg" class="hero-preview" alt="ESProfiler Capability Views" />
         </div>
 
@@ -106,6 +98,15 @@ onBeforeUnmount(() => {
 
     </div>
 
-  </div>
+  </section>
 
 </template>
+
+<style>
+
+#product-preview {
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */;
+}
+
+</style>
