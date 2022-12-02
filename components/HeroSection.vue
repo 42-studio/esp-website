@@ -1,28 +1,30 @@
-<script>
-import VueWriter from "vue-writer"
+<script setup>
+import VueWriter from 'vue-writer'
 
-export default {
-  components:{
-    VueWriter
-  },
-  data() {
-    return {
-      typerArray: ['Procurement...', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
-    }
-  }
-}
+const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
+
+const section = ref(null)
+const observer = inject('intersectionObserver')
+
+onMounted(() => {
+  observer.observe(section.value.querySelector('#product-preview'))
+})
+
+onBeforeUnmount(() => {
+  observer.unobserve(section.value.querySelector('#product-preview'))
+})
 
 </script>
 
 <template>
 
-  <div class="relative">
+  <div class="relative" ref="section">
 
     <div>
 
       <div class="w-6/12 mx-auto md:mr-0">
 
-        <svg class="mx-auto breath-slate" width="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+        <svg class="mx-auto breath-slate" width="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
           <path
               d="M302.43,512.797L511.999,722.366L571.519,662.847L571.519,829.5L885.888,515.009C886.669,514.228 887.107,513.169 887.107,512.064C887.107,510.96 886.669,509.901 885.888,509.12L527.748,150.98L527.748,24.005L1008.55,504.687C1010.51,506.643 1011.61,509.297 1011.61,512.064C1011.61,514.832 1010.51,517.485 1008.55,519.442L512,1016L452.481,956.476L452.48,777.917L452.479,777.918L184.423,513.804C183.958,513.346 183.697,512.72 183.699,512.067C183.7,511.414 183.964,510.789 184.432,510.334L511.999,190.66L827.764,510.372C828.689,511.309 828.684,512.816 827.754,513.746L603.262,738.238L603.262,631.103L721.594,512.771C721.781,512.583 721.887,512.329 721.887,512.064C721.887,511.799 721.781,511.545 721.594,511.358L511.999,301.763L302.43,511.332C302.235,511.526 302.126,511.79 302.126,512.064C302.126,512.339 302.235,512.603 302.43,512.797Z"
@@ -94,10 +96,10 @@ export default {
 
       </div>
 
-      <div class="relative lg:pl-32">
+      <div class="relative lg:pl-32" id="product-preview">
 
         <div class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
-          <img src="@/assets/img/previews/CapabilityCards.jpg" />
+          <img src="@/assets/img/previews/CapabilityCards.jpg" class="hero-preview" alt="ESProfiler Capability Views" />
         </div>
 
       </div>

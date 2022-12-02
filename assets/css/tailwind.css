@@ -1,6 +1,9 @@
+@import 'animate.css/animate.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 html {
     background: linear-gradient(149deg, rgb(43, 49, 70) 0%, rgba(30,29,44,1) 38%, rgba(13,17,22,1) 100%);
@@ -121,6 +124,28 @@ footer {
 .subscriber button:disabled {
     cursor: not-allowed;
     @apply bg-gray-600;
+}
+
+/*.animation {*/
+/*    animation-iteration-count: 1 !important;*/
+/*    animation-fill-mode: both !important;*/
+/*    animation-play-state: paused !important;*/
+/*}*/
+
+/*.animated {*/
+/*    animation-delay: calc(var(--scroll) * -1s) !important;*/
+/*}*/
+
+#product-preview > div {
+    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */;
+    animation-play-state: paused;
+}
+
+.animate__animated > div {
+    animation-play-state: running !important;
+    /*@apply animation;*/
+
 }
 
 .breath {
