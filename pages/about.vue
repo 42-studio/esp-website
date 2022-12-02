@@ -20,7 +20,7 @@
         <h2 class="text-2xl font-bold tracking-tight mt-20">Actionable data helps manage security portfolios</h2>
 
         <p class="mt-6 text-slate-300 leading-8 text-lg">
-          The founding of ESProfiler was driven after identifying a common trend of an inherent disconnect across enterprises, from the security assets owned to the security assets required. Often capability overlap,
+          The founding of ESProfiler was driven from hands-on industry experiences revealing a common trend of an inherent disconnect across enterprises, from the security assets owned to the security assets required. Often capability overlap,
           misconfiguration and assets failing to counter current threats is continuously observed. Security expenditure misses efficiency leading to lower levels of overall security.
         </p>
 
