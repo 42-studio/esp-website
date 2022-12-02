@@ -11,6 +11,17 @@ export default defineNuxtConfig({
             mode: 'out-in' // default
         },
         head: {
+            title: 'ESPROFILER | Continuous Security Investment Validation',
+            meta: [
+                {
+                    charset: 'utf-8'
+                },
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'An enterprise platform for continuous assurance of security investments against threats.'
+                }
+            ],
             link: [
                 {
                     rel: 'preconnect',

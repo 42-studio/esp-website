@@ -28,7 +28,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       </h2>
 
       <p class="m-8 text-lg leading-8 text-slate-300">
-        ESProfiler empowers security leaders to continually answer five powerful questions and make decisions with confidence.
+        ESProfiler is a platform that empowers security leaders to continually answer five powerful questions and make decisions with confidence.
       </p>
 
     </div>
@@ -119,8 +119,8 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Continually showing the delta between security capability acquired and security capability
-        achieved on the ground.
+        Continually showing the delta between security capability acquired and security capability achieved on the
+        ground enables security leaders to realise more value from security assets.
       </p>
 
     </elements-validation-section>
@@ -128,18 +128,19 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
     <elements-validation-section :icon="ClipboardDocumentListIcon" title="Where are our gaps & overlaps?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Identifying your security gaps and overlaps is near impossible when you don't know what security products you
-        own, what capability they provide, and what you have deployed.
+        Identifying your security gaps and investment overlap is near impossible when you don't know what security
+        products you own, what capability they provide, and what you have deployed.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus,
-        sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+        Combining the information answered from each question enables ESProfiler to build a clear picture of what you
+        own, what you have deployed and your capability against threats. ESProfilers analytics and visualisation engine
+        uses this information to display actionable insight into your security gaps and investment overlap.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere est. Cras consectetur nisi tellus,
-        sed dapibus massa auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus molestie.
+        With a deep knowledge of what's powering your security posture,  ESProfiler enables scenario-based modelling of
+        product investment and divestment against threats unlocking the next level of strategy and spend optimisation.
       </p>
 
     </elements-validation-section>
@@ -161,7 +162,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Quantifying what your security should be doing with what's happening in your enterprise and your wider industry
+        Quantifying what your security should be doing with what's happening in your enterprise and wider industry
         enables continuous threat-driven strategy and investment guidance.
       </p>
 

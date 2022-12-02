@@ -49,7 +49,7 @@ export default {
         <div class="shrink">
 
           <div class="inline-block mb-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
-            It's time we...
+            It's Time To
           </div>
 
           <div class=" max-w-2xl">
@@ -59,8 +59,8 @@ export default {
             </h1>
 
             <p class="mt-6 text-lg leading-8 text-slate-300">
-              What if you continually combined security <VueWriter :array="typerArray" :caret="underscore"/>
-              with security threats?
+              What if you continually fused security <VueWriter :array="typerArray" :caret="underscore"/>
+              against security threats?
             </p>
             <p class="mt-6 text-lg leading-8 text-slate-300">
               How would that transform enterprise security strategy and investment?

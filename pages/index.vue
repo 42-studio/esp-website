@@ -10,9 +10,9 @@
 
     <InvestmentValidation />
 
-    <TheSolution />
-
     <TheProduct />
+
+    <TheSolution />
 
   </div>
 
