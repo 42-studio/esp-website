@@ -60,7 +60,7 @@ export default {
 
             <p class="mt-6 text-lg leading-8 text-slate-300">
               What if you continually fused security <VueWriter :array="typerArray" :caret="underscore"/>
-              against security threats?
+              with security threats?
             </p>
             <p class="mt-6 text-lg leading-8 text-slate-300">
               How would that transform enterprise security strategy and investment?
