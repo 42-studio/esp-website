@@ -38,7 +38,7 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
     <div class="flex flex-col lg:flex-row">
 
-      <div class="flex flex-col lg:mt-[-40%]">
+      <div class="flex flex-col w-2/6 lg:mt-[-40%]">
 
         <div class="shrink">
 
@@ -56,6 +56,7 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
               What if you continually fused security <vue-writer :array="typerArray" class="inline-block font-bold"/><span class="animated flash infinite -ml-1">|</span><br/>
               with security threats?
             </p>
+
             <p class="mt-6 text-lg leading-8 text-slate-300">
               How would that transform enterprise security strategy and investment?
             </p>
@@ -80,7 +81,7 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
         <div class="grow">
 
-          <div class="my-5 ml-[4rem] mr-5 intersection slow pathing-height">
+          <div class="mt-8 ml-16 w-6/12 intersection slow pathing-height">
             <elements-path-bottom-left class="intersection slower pathing-width" />
           </div>
 
@@ -88,7 +89,7 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
       </div>
 
-      <div class="relative lg:pl-32">
+      <div class="relative">
 
         <div class="animated fadeInRight delay-4s">
           <div class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
