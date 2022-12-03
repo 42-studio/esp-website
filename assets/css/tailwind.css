@@ -37,7 +37,7 @@ footer {
 
 .bg-footer {
     @apply h-[50vw] max-h-[1000px] max-w-[2000px] bg-no-repeat bg-cover mx-auto absolute bottom-0 left-0 right-0 -z-10;
-    background-image: url('@/assets/img/footer-mesh.png');
+    background-image: url('assets/img/footer-mesh.png');
     background-position: center bottom;
 }
 
@@ -157,7 +157,7 @@ footer {
 
 .pathing-width {
     opacity: 0;
-    width: 0%;
+    width: 0;
     animation: path-width;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
@@ -177,7 +177,7 @@ footer {
 
 .pathing-height {
     opacity: 0;
-    height: 0%;
+    height: 0;
     animation: path-height;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
