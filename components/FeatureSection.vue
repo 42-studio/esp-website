@@ -1,3 +1,42 @@
+<script setup>
+import { BoltSlashIcon, ShieldExclamationIcon, ScaleIcon, WrenchScrewdriverIcon } from '@heroicons/vue/24/outline'
+import { useIntersectionObserver } from '../composables/IntersectionObserver'
+
+const observables = ref(null)
+useIntersectionObserver(observables)
+
+const features = [
+  {
+    name: 'Security Gaps',
+    description:
+        'Visibility of security gaps is unclear, spreadsheets are not informative, data formats are inconsistent, business silos keeps data divided.',
+    icon: ShieldExclamationIcon,
+    class: 'fadeInLeft'
+  },
+  {
+    name: 'Misconfiguration',
+    description:
+        'Details of product requirements can be illusive, the lack of a detailed cataloged with service and software dependencies means no implementation checklist.',
+    icon: WrenchScrewdriverIcon,
+    class: 'fadeInDown delay-1s'
+  },
+  {
+    name: 'Unused Capability',
+    description:
+        'Without an inventory data set that you can operationalise, it is almost impossible to keep track of time to implementation leading to products being shelved.',
+    icon: BoltSlashIcon,
+    class: 'fadeInRight delay-1s'
+  },
+  {
+    name: 'Investment Overlap',
+    description:
+        'A market that does not align in a meaningful and standardized way makes it very difficult to identify overlap when in investing in new capability.',
+    icon: ScaleIcon,
+    class: 'fadeInUp delay-2s'
+  }
+]
+</script>
+
 <template>
 
   <div class="relative">
@@ -29,13 +68,11 @@
 
           <div class="max-w-2xl">
 
-            <h2 class="text-2xl text-center font-bold tracking-tight sm:text-5xl">
-              Security Investment
-              <br>
-              is Broken
+            <h2 class="text-2xl font-bold tracking-tight sm:text-5xl">
+              Security investment is broken
             </h2>
 
-            <p class="mt-6 text-lg text-center leading-8 text-slate-300">
+            <p class="mt-6 text-lg leading-8 text-slate-300">
               Enterprises are spending more and deploying more, but the same issues still exist.
               Breaches are still occurring as a result!
             </p>
@@ -81,19 +118,19 @@ const features = [
   {
     name: 'Misconfiguration',
     description:
-        'Poorly deployed and configured products resulting in reduced visibility and security capability.',
+        'Details of product requirements can be illusive, the lack of a detailed cataloged with service and software dependencies means no implementation checklist.',
     icon: WrenchScrewdriverIcon
   },
   {
     name: 'Unused Capability',
     description:
-        'Products and features left on the shelf resulting in financial waste and unrealised security capability.',
+        'Without an inventory data set that you can operationalise, it is almost impossible to keep track of time to implementation leading to products being shelved.',
     icon: BoltSlashIcon
   },
   {
     name: 'Investment Overlap',
     description:
-        'Vast portfolios of products with significant security capability overlap.',
+        'A market that does not align in a meaningful and standardized way makes it very difficult to identify overlap when in investing in new capability.',
     icon: ScaleIcon
   }
 ]

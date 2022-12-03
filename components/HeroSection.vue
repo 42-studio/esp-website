@@ -14,7 +14,7 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
     <div>
 
-      <div class="w-6/12 mx-auto md:mr-0 animated delay-1s zoomIn">
+      <div class="w-6/12 mx-auto md:mr-0 animated delay-3s zoomIn">
 
         <svg class="mx-auto breath-slate" width="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
@@ -38,15 +38,15 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
     <div class="flex flex-col lg:flex-row">
 
-      <div class="flex flex-col lg:w-1/4 lg:mt-[-20vh]">
+      <div class="flex flex-col lg:w-1/4 lg:mt-[-40%]">
 
         <div class="shrink">
 
-          <div class="inline-block mb-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200 animated delay-2s fadeInLeft">
+          <div class="inline-block mb-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200 animated delay-1s fadeInDown">
             It's Time To
           </div>
 
-          <div class=" max-w-2xl animated delay-3s fadeInUp">
+          <div class=" max-w-2xl animated delay-2s fadeInLeft">
 
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
               Revolutionize<br />Security<br />Investment
@@ -80,18 +80,20 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
         <div class="grow">
 
-          <div class="h-full my-5 ml-[4rem] mr-5">
-            <elements-path-bottom-left id="hero-line-1"/>
+          <div class="my-5 ml-[4rem] mr-5 intersection slow pathing-height">
+            <elements-path-bottom-left class="intersection slower pathing-width" />
           </div>
 
         </div>
 
       </div>
 
-      <div class="relative lg:pl-32 intersection">
+      <div class="relative lg:pl-32">
 
-        <div id="product-preview" class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
-          <img src="@/assets/img/previews/CapabilityCards.jpg" class="hero-preview" alt="ESProfiler Capability Views" />
+        <div class="animated fadeInRight delay-4s">
+          <div class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
+            <img src="@/assets/img/previews/CapabilityCards.jpg" class="hero-preview" alt="ESProfiler Capability Views" />
+          </div>
         </div>
 
       </div>
@@ -101,12 +103,3 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
   </section>
 
 </template>
-
-<style>
-
-#product-preview {
-  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.5s; /* don't forget to set a duration! */;
-}
-
-</style>

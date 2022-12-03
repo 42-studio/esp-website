@@ -1,11 +1,5 @@
 const isClient = typeof document !== 'undefined'
 
-const options = {
-  root: isClient ? document.el : null,
-  rootMargin: '0px',
-  threshold: 0.5
-}
-
 const callback = ( entries, observer ) => {
   entries.forEach(( entry ) => {
     // console.log('ENTRY', entry)
@@ -23,15 +17,19 @@ const callback = ( entries, observer ) => {
 
     if(entry.isIntersecting === true) {
       entry.target.classList.add('animated')
-      return
+      // return
     }
 
-    entry.target.classList.remove('animated')
+    // entry.target.classList.remove('animated')
 
   });
 };
 
-const observer = isClient ? new IntersectionObserver(callback, options) : null
+const observer = isClient ? new IntersectionObserver(callback, {
+  root: document.el,
+  rootMargin: '0px',
+  threshold: 0.7
+}) : null
 
 export function useIntersectionObserver (observables) {
 
