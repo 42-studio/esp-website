@@ -54,7 +54,7 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
             <p class="mt-6 text-lg leading-8 text-slate-300">
               What if you continually fused security <vue-writer :array="typerArray" class="inline-block font-bold"/><span class="animated flash infinite -ml-1">|</span><br/>
-              against security threats?
+              with security threats?
             </p>
             <p class="mt-6 text-lg leading-8 text-slate-300">
               How would that transform enterprise security strategy and investment?
