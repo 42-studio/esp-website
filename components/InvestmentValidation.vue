@@ -189,7 +189,7 @@ useIntersectionObserver(observables)
       <div class="flex mr-auto">
 
         <div class="inline-block w-5/12 lg:w-3/12 my-[-2px] mr-auto pr-8 lg:pr-0">
-          <div class="pl-6 h-[15vh]">
+          <div class="pl-6 h-[18vh]">
             <elements-path-bottom-left />
           </div>
         </div>

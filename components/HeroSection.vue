@@ -38,7 +38,7 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
 
     <div class="flex flex-col lg:flex-row">
 
-      <div class="flex flex-col lg:w-1/4 lg:mt-[-40%]">
+      <div class="flex flex-col lg:mt-[-40%]">
 
         <div class="shrink">
 

@@ -20,7 +20,7 @@ useIntersectionObserver(observables)
 
       <div class="w-8/12 lg:w-6/12 mx-auto text-center intersection fadeInDown delay-2s">
 
-        <div class="inline-block mb-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
+        <div class="inline-block my-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
           Enterprise Ready
         </div>
 
@@ -28,7 +28,7 @@ useIntersectionObserver(observables)
           Created with Enterprises for Enterprises
         </h2>
 
-        <p class="my-8 text-lg leading-8 text-slate-300">
+        <p class="my-8 text-lg leading-8 text-slate-300 text-justify lg:text-center">
           ESProfiler has been developed with some of the largest global enterprises in the strictest sectors.
           As a result, ESProfiler offers customers native enterprise-grade features. Including dedicated compute, storage,
           auditing, 2FA, enterprise sign-on and full extensibility through advanced APIs.
@@ -48,14 +48,14 @@ useIntersectionObserver(observables)
             Threat-centric<br />Thinking
           </h3>
 
-          <p>
+          <p class="text-justify lg:text-left">
             ESProfiler promotes threat-centric thinking to understanding a business's security posture “think like an attacker to stop an attacker”.
             For the most effective defence we must align our way of thinking.
           </p>
 
         </div>
 
-        <div class="intersection fadeInLeft delay-2s w-8/12 lg:w-4/12">
+        <div class="intersection fadeInLeft delay-1s w-8/12 lg:w-4/12">
 
           <div class="shrink inline-block rounded-full w-20 h-20 text-sm ring-1 ring-slate-300/10 text-slate-200">
             <newspaper-icon class="stroke-1 w-[65%] h-[65%] m-[17.5%]" />
@@ -65,13 +65,13 @@ useIntersectionObserver(observables)
             Industry<br />Recognised
           </h3>
 
-          <p>
+          <p class="text-justify lg:text-left">
             ESP aligns your data with industry-recognized threat-centric attack frameworks by providing a powerful toolset for strategically mapping the coverage and divestment of security assets.
           </p>
 
         </div>
 
-        <div class="intersection fadeInLeft delay-4s w-8/12 lg:w-4/12">
+        <div class="intersection fadeInLeft delay-2s w-8/12 lg:w-4/12">
 
           <div class="shrink inline-block rounded-full w-20 h-20 text-sm ring-1 ring-slate-300/10 text-slate-200">
             <globe-alt-icon class="stroke-1 w-[65%] h-[65%] m-[17.5%]" />
@@ -81,7 +81,7 @@ useIntersectionObserver(observables)
             Advanced<br />Coverage Model
           </h3>
 
-          <p>
+          <p class="text-justify lg:text-left">
             Extending far beyond traditional coverage, our Control Dependency Models capture the defensive logical placement, function, platforms covered and technologies dependencies.
           </p>
 
