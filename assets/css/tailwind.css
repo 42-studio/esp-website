@@ -9,6 +9,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     background: linear-gradient(149deg, rgb(43, 49, 70) 0%, rgba(30,29,44,1) 38%, rgba(13,17,22,1) 100%);
 }
 
@@ -139,23 +140,59 @@ footer {
 /*    animation-delay: calc(var(--scroll) * -1s) !important;*/
 /*}*/
 
-.intersection > div {
+.intersection, .intersection > * {
+    visibility: hidden;
     animation-play-state: paused !important;
 }
 
-.intersection.animated > div {
+.intersection.animated, .intersection.animated > * {
+    visibility: visible;
     animation-play-state: running !important;
     /*@apply animation;*/
+}
+
+.pathing-width {
+    opacity: 0;
+    width: 0%;
+    animation: path-width;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+
+@keyframes path-width {
+    from {
+        width: 5%;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.pathing-height {
+    opacity: 0;
+    height: 0%;
+    animation: path-height;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes path-height {
+    from {
+        height: 5%;
+        opacity: 0;
+    }
+    to {
+        height: 100%;
+        opacity: 1;
+    }
 }
 
 .breath {
     filter: drop-shadow(0px 0px 15px #0f111a);
     animation: breath 1.5s ease-in infinite alternate;
-}
-
-.breath-slate {
-    filter: drop-shadow(0px 0px 15px #5b349d);
-    animation: breath-slate 3s ease-in infinite alternate;
 }
 
 @keyframes breath {
@@ -165,6 +202,11 @@ footer {
     to {
         filter: drop-shadow(0px 0px 2px #b232ab);
     }
+}
+
+.breath-slate {
+    filter: drop-shadow(0px 0px 15px #5b349d);
+    animation: breath-slate 3s ease-in infinite alternate;
 }
 
 @keyframes breath-slate {

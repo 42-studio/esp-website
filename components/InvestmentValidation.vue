@@ -1,46 +1,54 @@
 <script setup>
 
 import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIcon } from '@heroicons/vue/24/outline'
+import { useIntersectionObserver } from '../composables/IntersectionObserver'
+
+const observables = ref(null)
+useIntersectionObserver(observables)
 
 </script>
 
 <template>
 
-  <div class="relative max-w-6xl mx-auto mt-8">
+  <div class="relative max-w-6xl mx-auto mt-8" ref="observables">
 
     <div class="h-[15vh] pb-5">
-      <div class="v-pathway mx-auto" />
+      <div class="intersection v-pathway slow pathing-height mx-auto" />
     </div>
 
-    <div class="text-center mb-10">
+    <div class="intersection fadeInDown">
 
-      <div class="shrink inline-block rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
-        The Solution!
+      <div class="text-center mb-10">
+
+        <div class="shrink inline-block rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
+          The Solution!
+        </div>
+
+      </div>
+
+      <div class="lg:w-6/12 mx-auto text-center">
+
+        <h2 class="text-2xl font-bold tracking-tight sm:text-5xl">
+          Continuous Security<br/>
+          Investment Validation
+        </h2>
+
+        <p class="m-8 text-lg leading-8 text-slate-300">
+          ESProfiler is a platform that empowers security leaders to continually answer five powerful questions and make decisions with confidence.
+        </p>
+
       </div>
 
     </div>
 
-    <div class="lg:w-6/12 mx-auto text-center">
-
-      <h2 class="text-2xl font-bold tracking-tight sm:text-5xl">
-        Continuous Security<br/>
-        Investment Validation
-      </h2>
-
-      <p class="m-8 text-lg leading-8 text-slate-300">
-        ESProfiler is a platform that empowers security leaders to continually answer five powerful questions and make decisions with confidence.
-      </p>
-
-    </div>
-
-    <div class="hidden lg:block">
+    <div class="hidden overflow-clip lg:block intersection slow zoomIn">
 
       <div class="flex h-[15vh] w-6/12 mr-auto">
 
         <div class="inline-block w-6/12" />
 
         <div class="inline-block w-6/12 my-[-2px]">
-          <elements-path-bottom-right  />
+            <elements-path-bottom-right />
         </div>
 
       </div>
@@ -63,7 +71,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
       <div class="v-pathway mx-auto" />
     </div>
 
-    <elements-validation-section class="mt-5" :icon="ClipboardDocumentCheckIcon" title="What do we own?">
+    <elements-validation-section class="mt-5 intersection fadeInDown" :icon="ClipboardDocumentCheckIcon" title="What do we own?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         Today's security products don't just reside in your security teams. Multiple business units utilising
@@ -84,7 +92,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </elements-validation-section>
 
-    <elements-validation-section :icon="ClipboardDocumentListIcon" title="What should it do?">
+    <elements-validation-section class="intersection fadeInDown" :icon="ClipboardDocumentListIcon" title="What should it do?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         Understanding what your security products do and quantifying their benefit is almost impossible in a market
@@ -105,7 +113,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </elements-validation-section>
 
-    <elements-validation-section :icon="ClipboardDocumentListIcon" title="What is deployed?">
+    <elements-validation-section class="intersection fadeInDown" :icon="ClipboardDocumentListIcon" title="What is deployed?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         There is a disconnect between the security capability enterprises acquire and the capability they subsequently
@@ -125,7 +133,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </elements-validation-section>
 
-    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Where are our gaps & overlaps?">
+    <elements-validation-section class="intersection fadeInDown" :icon="ClipboardDocumentListIcon" title="Where are our gaps & overlaps?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         Identifying your security gaps and investment overlap is near impossible when you don't know what security
@@ -145,7 +153,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </elements-validation-section>
 
-    <elements-validation-section :icon="ClipboardDocumentListIcon" title="Is it working & relevant?">
+    <elements-validation-section class="intersection fadeInDown" :icon="ClipboardDocumentListIcon" title="Is it working & relevant?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         With your threat actors continuously evolving, your enterprise faces a continual flow of security incidents.
@@ -168,7 +176,7 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </elements-validation-section>
 
-    <div class="mb-4">
+    <div class="mb-4 intersection fadeInDown">
 
       <div class="shrink inline-block rounded-full w-14 h-14 text-sm ring-1 ring-slate-300/10 text-slate-200">
         <arrow-small-down-icon class="stroke-1 w-[65%] h-[65%] m-[17.5%]" />
@@ -176,22 +184,26 @@ import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIc
 
     </div>
 
-    <div class="flex mr-auto">
+    <div class="intersection zoomIn">
 
-      <div class="inline-block w-5/12 lg:w-3/12 my-[-2px] mr-auto pr-8 lg:pr-0">
-        <div class="pl-6 h-[15vh]">
-          <elements-path-bottom-left />
+      <div class="flex mr-auto">
+
+        <div class="inline-block w-5/12 lg:w-3/12 my-[-2px] mr-auto pr-8 lg:pr-0">
+          <div class="pl-6 h-[15vh]">
+            <elements-path-bottom-left />
+          </div>
         </div>
+
       </div>
 
-    </div>
+      <div class="mr-auto hidden lg:flex">
 
-    <div class="mr-auto hidden lg:flex">
+        <div class="inline-block w-3/12" />
 
-      <div class="inline-block w-3/12" />
+        <div class="inline-block w-3/12 mr-auto my-[-2px]">
+          <elements-path-top-right class="aspect-square" />
+        </div>
 
-      <div class="inline-block w-3/12 mr-auto my-[-2px]">
-        <elements-path-top-right class="aspect-square" />
       </div>
 
     </div>
