@@ -76,6 +76,10 @@ footer {
     @apply block w-full p-2.5 rounded-lg border border-slate-700 hover:border-slate-600 focus:border-slate-500 text-white text-sm bg-gray-900 bg-opacity-50 placeholder-gray-400 ;
 }
 
+.form-input:focus-visible {
+    outline: none;
+}
+
 .form-check {
     @apply w-6 h-6 rounded text-blue-600 bg-gray-900 bg-opacity-50 border-gray-600 ring-offset-gray-800;
 }
