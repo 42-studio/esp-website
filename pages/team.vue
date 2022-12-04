@@ -10,10 +10,9 @@
         </h1>
 
         <p class="mt-6 text-lg leading-8 text-slate-300">
-          We are a team with extensive experience delivering security to enterprises. Together we have sold,
-          implemented and displaced a wide array of security products across the largest enterprises.
-          We have first-hand experience with customers' pain when investing in and realising value from security.
-          Our passion has driven us to develop a solution to the pain.
+          Our team has extensive experience in delivering security solutions to enterprises. We have observed
+          first-hand the common pain points and challenges that customers face when investing in and realizing value
+          from security products. In response, we have developed a solution that helps enterprises solve these issues.
         </p>
       </div>
 

@@ -13,7 +13,7 @@ useIntersectionObserver(observables)
 
     <div class="intersection fadeInDown">
       <div class="inline-block mb-8 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
-        The Platform
+        The CSIV Platform
       </div>
     </div>
 
@@ -23,10 +23,12 @@ useIntersectionObserver(observables)
 
     <div class="mx-auto md:w-8/12 mb-20 intersection fadeIn">
       <p class="my-8 text-lg leading-8 text-slate-300 text-justify lg:text-center">
-        A platform for continuous assurance of your security investments against threat-centric frameworks including
-        MITRE ATT&CK®. Utilizing our advanced collider architecture, we combine what your security assets provide,
-        how much they cost, and how they are performing. Allowing you to determine where to invest for
-        maximum risk reduction.
+        A platform that continuously empowers your security investments using threats.
+        <br>
+        ESProfiler is a cloud or hybrid-on-premise solution designed to help you break down silos in security,
+        prioritize threats in your strategy, and continuously maximize your return on security investment.
+        With ESProfiler, you can understand your security products, capabilities, and overlaps, enabling optimization
+        of security spend and posture.
       </p>
     </div>
 

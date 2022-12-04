@@ -8,7 +8,7 @@ useIntersectionObserver(observables)
 const features = [
   {
     name: 'Security Gaps',
-    description: 'Poorly deployed and configured products resulting in reduced visibility and security capability.',
+    description: 'Security portfolios with gaps and insufficient capability to counter relevant threats.',
     icon: ShieldExclamationIcon,
     class: 'fadeInLeft'
   },
@@ -16,19 +16,19 @@ const features = [
     name: 'Misconfiguration',
     description: 'Poorly deployed and configured products resulting in reduced visibility and security capability.',
     icon: WrenchScrewdriverIcon,
-    class: 'fadeInDown delay-1s'
+    class: 'fadeInRight delay-1s'
   },
   {
     name: 'Unused Capability',
     description: 'Products and features left on the shelf resulting in financial waste and unrealised security capability.',
     icon: BoltSlashIcon,
-    class: 'fadeInRight delay-1s'
+    class: 'fadeInLeft delay-1s'
   },
   {
     name: 'Investment Overlap',
     description: 'Vast portfolios of products with significant security capability overlap.',
     icon: ScaleIcon,
-    class: 'fadeInUp delay-2s'
+    class: 'fadeInRight'
   }
 ]
 </script>
@@ -66,11 +66,11 @@ const features = [
 
             <div class="max-w-2xl">
 
-              <h2 class="text-2xl font-bold tracking-tight sm:text-5xl">
-                Security investment is broken
+              <h2 class="text-2xl text-center font-bold tracking-tight sm:text-5xl">
+                Security Investment is Broken
               </h2>
 
-              <p class="mt-6 text-lg leading-8 text-slate-300">
+              <p class="mt-6 text-lg text-center leading-8 text-slate-300">
                 Enterprises are spending more and deploying more, but the same issues still exist.
                 Breaches are still occurring as a result!
               </p>

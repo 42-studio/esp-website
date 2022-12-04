@@ -5,7 +5,7 @@ import { useIntersectionObserver } from '../composables/IntersectionObserver.js'
 const observables = ref(null)
 useIntersectionObserver(observables)
 
-const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
+const typerArray = ['Procurement...', 'Contracts', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
 </script>
 
 <template>
@@ -53,7 +53,9 @@ const typerArray = ['Procurement...', 'Inventory...', 'Utilisation...', 'Control
             </h1>
 
             <p class="mt-6 text-lg leading-8 text-slate-300">
-              What if you continually fused security <vue-writer :array="typerArray" class="inline-block font-bold"/><span class="animated flash infinite -ml-1">|</span><br/>
+              What if you continually fused security<br>
+              <vue-writer :array="typerArray" class="inline-block font-bold"/><span class="animated flash infinite -ml-1">|</span>
+              <br>
               with security threats?
             </p>
 

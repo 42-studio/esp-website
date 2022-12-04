@@ -12,7 +12,7 @@
         A representative will get back to you soon.
       </p>
 
-      <nuxt-link href="/schedule-a-demo" class="mt-20 button-primary">Continue &nbsp; &rarr;</nuxt-link>
+      <nuxt-link href="/" class="mt-20 button-primary">Continue &nbsp; &rarr;</nuxt-link>
 
     </div>
 

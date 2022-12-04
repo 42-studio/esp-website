@@ -29,9 +29,9 @@ useIntersectionObserver(observables)
         </h2>
 
         <p class="my-8 text-lg leading-8 text-slate-300 text-justify lg:text-center">
-          ESProfiler has been developed with some of the largest global enterprises in the strictest sectors.
-          As a result, ESProfiler offers customers native enterprise-grade features. Including dedicated compute, storage,
-          auditing, 2FA, enterprise sign-on and full extensibility through advanced APIs.
+          ESProfiler was developed in collaboration with some of the world's largest and most stringent enterprises.
+          This has resulted in a platform that offers native enterprise-grade features, such as dedicated
+          compute/storage, auditing, 2FA, enterprise sign-on, and full extensibility through advanced APIs.
         </p>
 
       </div>
@@ -45,7 +45,7 @@ useIntersectionObserver(observables)
           </div>
 
           <h3 class="text-2xl font-bold tracking-tight sm:text-3xl my-8">
-            Threat-centric<br />Thinking
+            Holistic<br>Approach
           </h3>
 
           <p class="text-justify lg:text-left">
@@ -62,11 +62,13 @@ useIntersectionObserver(observables)
           </div>
 
           <h3 class="text-2xl font-bold tracking-tight sm:text-3xl my-8">
-            Industry<br />Recognised
+            Capability<br>Exchange
           </h3>
 
           <p class="text-justify lg:text-left">
-            ESP aligns your data with industry-recognized threat-centric attack frameworks by providing a powerful toolset for strategically mapping the coverage and divestment of security assets.
+            Integrating directly with our Capability Exchange, a living catalogue of security products, and features
+            with associated capabilities. Feature and capability updates are synchronized
+            directly with product owners, promoting better adoption and value from your security products.
           </p>
 
         </div>
@@ -78,11 +80,13 @@ useIntersectionObserver(observables)
           </div>
 
           <h3 class="text-2xl font-bold tracking-tight sm:text-3xl my-8">
-            Advanced<br />Coverage Model
+            Unlimited<br />Integrations
           </h3>
 
           <p class="text-justify lg:text-left">
-            Extending far beyond traditional coverage, our Control Dependency Models capture the defensive logical placement, function, platforms covered and technologies dependencies.
+            An enterprise-ready integration engine unlocks seamless automation and integration across cloud and
+            on-premise environments. Choose from a range of pre-built integrations or build your own with inbuilt
+            support for the latest JavaScript standard.
           </p>
 
         </div>

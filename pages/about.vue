@@ -8,26 +8,33 @@
 
         <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Empowering Security Investments</h1>
 
-        <p class="mt-6 text-lg leading-8 text-slate-300">What do your security assets provide and are they relevant?</p>
-
-        <h2 class="text-2xl font-bold tracking-tight mt-20">Threat-Centric Insight</h2>
-
-        <p class="mt-6 text-slate-300 leading-8 text-lg">
-          Cyber security is becoming ever more significant. Threats that continue to evolve and finite security budgets,
-          maximizing the return on security investments has never been more important.
+        <p class="mt-6 text-lg leading-8 text-slate-300">
+          ESProfiler was founded in response to the disconnect we observed across enterprises between their security investments and requirements.
         </p>
 
-        <h2 class="text-2xl font-bold tracking-tight mt-20">Actionable data helps manage security portfolios</h2>
-
-        <p class="mt-6 text-slate-300 leading-8 text-lg">
-          The founding of ESProfiler was driven from hands-on industry experiences revealing a common trend of an inherent disconnect across enterprises, from the security assets owned to the security assets required. Often capability overlap,
-          misconfiguration and assets failing to counter current threats is continuously observed. Security expenditure misses efficiency leading to lower levels of overall security.
+        <p class="mt-6 text-lg leading-8 text-slate-300">
+          Our mission is to empower enterprises to break down silos in security, prioritise threats in their
+          strategy, and use it continuously to maximize their return on security investment.
         </p>
 
-        <p class="mt-6 text-slate-300 leading-8 text-lg">
-          Our founders realised the inability for enterprises to quantify what security assets provide is at the heart of the issues around portfolio management. By answering the question; &quot;What do my security assets provide?&quot; the foundation for objective comparison can be built.
-          Overlaying threat intelligence, incidents, breach assessments, and more in a platform that delivers continuous security strategy and investment validation.
-        </p>
+<!--        <h2 class="text-2xl font-bold tracking-tight mt-20">Continuous Security Investment Validation</h2>-->
+
+<!--        <p class="mt-6 text-slate-300 leading-8 text-lg">-->
+<!--          Cyber security is becoming ever more significant. Threats that continue to evolve and finite security budgets,-->
+<!--          maximizing the return on security investments has never been more important.-->
+<!--        </p>-->
+
+<!--        <h2 class="text-2xl font-bold tracking-tight mt-20">Actionable data helps manage security portfolios</h2>-->
+
+<!--        <p class="mt-6 text-slate-300 leading-8 text-lg">-->
+<!--          The founding of ESProfiler was driven from hands-on industry experiences revealing a common trend of an inherent disconnect across enterprises, from the security assets owned to the security assets required. Often capability overlap,-->
+<!--          misconfiguration and assets failing to counter current threats is continuously observed. Security expenditure misses efficiency leading to lower levels of overall security.-->
+<!--        </p>-->
+
+<!--        <p class="mt-6 text-slate-300 leading-8 text-lg">-->
+<!--          Our founders realised the inability for enterprises to quantify what security assets provide is at the heart of the issues around portfolio management. By answering the question; &quot;What do my security assets provide?&quot; the foundation for objective comparison can be built.-->
+<!--          Overlaying threat intelligence, incidents, breach assessments, and more in a platform that delivers continuous security strategy and investment validation.-->
+<!--        </p>-->
 
       </div>
 
@@ -53,29 +60,29 @@
 
         </div>
 
-        <div class="v-pathway mx-auto my-5" />
+<!--        <div class="v-pathway mx-auto my-5" />-->
 
-        <div class="inline-block mx-auto rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
-          RF-IPQ Enablement
-        </div>
+<!--        <div class="inline-block mx-auto rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">-->
+<!--          RFP/RFI Integration-->
+<!--        </div>-->
 
-        <p class="text-center text-slate-300 text-sm size mt-4">We can embed into the process to<br/>streamline the process</p>
+<!--        <p class="text-center text-slate-300 text-sm size mt-4">We can embed into the process to<br/>streamline the process</p>-->
 
-        <div class="v-pathway mx-auto my-5" />
+<!--        <div class="v-pathway mx-auto my-5" />-->
 
-        <div class="inline-block mx-auto rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
-          Data Management
-        </div>
+<!--        <div class="inline-block mx-auto rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">-->
+<!--          Contract Integration-->
+<!--        </div>-->
 
-        <p class="text-center text-slate-300 text-sm size mt-4">Our solution helps you manage your<br/>security portfolio</p>
+<!--        <p class="text-center text-slate-300 text-sm size mt-4">Our solution helps you manage your<br/>security portfolio</p>-->
 
-        <div class="v-pathway mx-auto my-5" />
+<!--        <div class="v-pathway mx-auto my-5" />-->
 
-        <div class="inline-block mx-auto rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
-          Data Analytics
-        </div>
+<!--        <div class="inline-block mx-auto rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">-->
+<!--          Data Analytics-->
+<!--        </div>-->
 
-        <p class="text-center text-slate-300 text-sm size mt-4">Make better invest and divest decisions<br/>using actionable data</p>
+<!--        <p class="text-center text-slate-300 text-sm size mt-4">Make better invest and divest decisions<br/>using actionable data</p>-->
 
       </div>
 

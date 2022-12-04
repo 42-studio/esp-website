@@ -58,7 +58,7 @@ const submit = async () => {
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         For general enquiries...<br/>
-        If you are looking for a demo, you can <nuxt-link to="/schedule-a-demo">request a demo</nuxt-link>.
+        For a platform demo, you can <nuxt-link to="/schedule-a-demo">schedule a demo</nuxt-link>.
       </p>
 
       <div class="flex ml-">
@@ -134,6 +134,13 @@ const submit = async () => {
       </div>
 
     </form>
+
+    <p class="text-sm mt-10">
+      ESPROFILER is committed to protecting and respecting your privacy. We will only use your personal information to
+      administer your account and to provide the products and services you have requested from us. By clicking 'Send
+      Request' above, you consent to allow ESPROFILER to store and process the personal information submitted above to
+      provide you the content requested.
+    </p>
 
     </div>
 
