@@ -27,7 +27,7 @@ useIntersectionObserver(observables)
         <br>
         ESProfiler is a cloud or hybrid-on-premise solution designed to help you break down silos in security,
         prioritize threats in your strategy, and continuously maximize your return on security investment.
-        With ESProfiler, you can understand your security products, capabilities, and overlaps, enabling optimization
+        With ESProfiler, you can understand your security portfolio, capabilities, and gaps, enabling optimization
         of security spend and posture.
       </p>
     </div>
