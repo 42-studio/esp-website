@@ -29,7 +29,7 @@
 
       <div class=bg-footer />
 
-      <footer class="pb-5 md:pb-10">
+      <footer class="md:pb-10">
 
         <div class="container block md:flex p-5 w-full items-end">
 
@@ -53,16 +53,20 @@
 
           <div class="grow text-right ">
 
-            <div class="pt-2 flex justify-end">
+            <div class="py-4 flex justify-end">
+
               <a href="https://www.linkedin.com/company/esprofiler" target="linkedin">
                 <svg style="width:38px;height:38px" viewBox="0 0 24 24" class="inline-block mt-1">
-                  <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                  <path fill="currentColor"
+                        d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
                 </svg>
               </a>
+
               <img class="ml-3" src="~/assets/img/esprofiler-ncsc.png">
+
             </div>
 
-            <div class="text-xs text-thin text-gray-400 grow pt-2">
+            <div class="text-xs text-thin text-gray-400 grow">
               ESPROFILER LTD, Registered in England &amp; Wales<br />
               Company No. 12711421 | VAT No. 378676921
             </div>
