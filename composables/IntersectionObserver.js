@@ -28,7 +28,7 @@ const callback = ( entries, observer ) => {
 const observer = isClient ? new IntersectionObserver(callback, {
   root: document.el,
   rootMargin: '0px',
-  threshold: 0.7
+  threshold: 0.6
 }) : null
 
 export function useIntersectionObserver (observables) {

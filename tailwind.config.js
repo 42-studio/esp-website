@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       // backgroundImage: {
-      //   'grid-pattern': "url('@/assets/img/grid.svg')"
+      //   'grid-pattern': "url('~/assets/img/grid.svg')"
       // }
     },
     fontFamily: {

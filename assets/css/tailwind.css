@@ -94,7 +94,7 @@ footer {
 }
 
 .container {
-    @apply mx-auto md:max-w-6xl px-10 sm:px-20 xl:px-0;
+    @apply mx-auto md:max-w-6xl px-10 xl:px-0;
 }
 
 .container-extended {

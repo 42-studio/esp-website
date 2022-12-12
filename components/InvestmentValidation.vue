@@ -1,7 +1,7 @@
 <script setup>
 
 import { ClipboardDocumentCheckIcon, ClipboardDocumentListIcon, ArrowSmallDownIcon } from '@heroicons/vue/24/outline'
-import { useIntersectionObserver } from '../composables/IntersectionObserver'
+import { useIntersectionObserver } from '~/composables/IntersectionObserver.js'
 
 const observables = ref(null)
 useIntersectionObserver(observables)

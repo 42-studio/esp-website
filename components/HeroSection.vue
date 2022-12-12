@@ -5,12 +5,12 @@ import { useIntersectionObserver } from '../composables/IntersectionObserver.js'
 const observables = ref(null)
 useIntersectionObserver(observables)
 
-const typerArray = ['Procurement...', 'Contracts', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
+const typerArray = ['Procurement...', 'Contracts', 'Product Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
 
 
 let imageIndex = ref(0)
 const images = [
-    new URL('~/assets/img/product/cyberdefense-matrix-dark.png', import.meta.url),
+    new URL('~/assets/img/product/cyber-defense-matrix-dark.png', import.meta.url),
     new URL('~/assets/img/product/mitre-attack-dark.png', import.meta.url),
     new URL('~/assets/img/product/capability-dark.png', import.meta.url),
     new URL('~/assets/img/product/threat-resistance-dark.png', import.meta.url),
@@ -60,7 +60,7 @@ setInterval(changeImage, 10000)
 
     <div class="flex flex-col lg:flex-row">
 
-      <div class="flex flex-col w-2/6 lg:mt-[-40%]">
+      <div class="flex flex-col w-full lg:w-2/6 lg:mt-[-40%]">
 
         <div class="shrink">
 
@@ -68,7 +68,7 @@ setInterval(changeImage, 10000)
             It's Time To
           </div>
 
-          <div class=" max-w-2xl animated delay-2s fadeInLeft">
+          <div class="max-w-2xl animated delay-2s fadeInLeft">
 
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
               Revolutionize<br />Security<br />Investment
