@@ -58,7 +58,7 @@ const submit = async () => {
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         For general enquiries...<br/>
-        For a platform demo, you can <nuxt-link to="/schedule-a-demo">schedule a demo</nuxt-link>.
+        For platform demonstrations, please use <nuxt-link to="/schedule-a-demo">schedule a demo</nuxt-link>.
       </p>
 
       <div class="flex ml-">
@@ -69,7 +69,7 @@ const submit = async () => {
 
         <div class="pl-8 text-lg">
           +44 (0)20 3778 1580<br/>
-          Mon - Fri, 8:00-22:00
+          Mon - Fri, 9:00-18:00 GMT
         </div>
 
       </div>

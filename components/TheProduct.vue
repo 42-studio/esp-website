@@ -23,8 +23,6 @@ useIntersectionObserver(observables)
 
     <div class="mx-auto md:w-8/12 mb-20 intersection fadeIn">
       <p class="my-8 text-lg leading-8 text-slate-300 text-justify lg:text-center">
-        A platform that continuously empowers your security investments using threats.
-        <br>
         ESProfiler is a cloud or hybrid-on-premise solution designed to help you break down silos in security,
         prioritize threats in your strategy, and continuously maximize your return on security investment.
         With ESProfiler, you can understand your security portfolio, capabilities, and gaps, enabling optimization

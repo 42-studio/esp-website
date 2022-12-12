@@ -36,7 +36,8 @@
         </div>
 
         <elements-team-member right name="Marc Newton" title="Project Lead & Co-Founder" photo="marc-newton.jpg" linkedin="https://www.linkedin.com/in/marcandrewnewton" >
-          Over 16 year's experience developing enterprise-class web applications. Marc brings his expertise in industry 4.0, analytics &amp; indie game start-ups to produce our cutting-edge reactive web platforms.
+          Over 16 year's experience developing enterprise-class web applications. Marc brings his expertise in
+          industry 4.0, analytics &amp; indie game start-ups to produce our cutting-edge reactive web platforms.
         </elements-team-member>
 
       </div>
@@ -44,7 +45,7 @@
       <div class="block xl:flex items-center">
 
         <elements-team-member name="Adrian Taylor" title="Industry Advisor" photo="adrian-taylor.jpg" linkedin="https://www.linkedin.com/in/atcyber">
-          Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
+          SecOps consultant with Deloitte UK after strong technical background with HP, Sony, FireEye.
         </elements-team-member>
 
         <div class="h-36 hidden xl:block">
@@ -52,7 +53,7 @@
         </div>
 
         <elements-team-member right name="Ed Stirzaker" title="Sales Advisor" photo="ed-stirzaker.jpg" linkedin="https://www.linkedin.com/in/ed-stirzaker-60a391b/">
-          Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
+          20 years large enterprise security sales management experience with Forcepoint, Symantec, RSA, Skyhigh.
         </elements-team-member>
 
       </div>
@@ -60,7 +61,8 @@
       <div class="block xl:flex items-center">
 
         <elements-team-member name="Paul Murgatroyd" title="Product Advisor" photo="paul-murgatroyd.jpg" linkedin="https://www.linkedin.com/in/paulmurgatroyd">
-          Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
+          Principal product manager for Symantec's primary product, extensive experience with enterprise
+          security product design and delivery with IBM.
         </elements-team-member>
 
         <div class="h-36 hidden xl:block">
@@ -68,7 +70,8 @@
         </div>
 
         <elements-team-member right name="Edward Parsons" title="Commercials" photo="edward-parsons.jpg" linkedin="https://www.linkedin.com/in/edward-parsons-9223527">
-          Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
+          More than 20 year's experience in commercial, procurement and supply chain roles with large enterprises
+          including Amazon, Johnson & Johnson and DHL.
         </elements-team-member>
 
       </div>
@@ -76,7 +79,7 @@
       <div class="block xl:flex items-center">
 
         <elements-team-member name="Sounil Yu" title="Expert Advisor" photo="sounil-yu.jpg" linkedin="https://www.linkedin.com/in/sounil">
-          Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
+          Cyber security author, investor and strategist; was Chief Security Scientist for Bank of America.
         </elements-team-member>
 
         <div class="h-36 hidden xl:block">
@@ -84,7 +87,7 @@
         </div>
 
         <elements-team-member right name="Amy Lemberger" title="CISO Advisor" photo="amy-lemberger.jpg" linkedin="https://www.linkedin.com/in/amy-lemberger-baa8b68" >
-          Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
+          Currently Group Risk & Governance Director at Gamma Telecomm and ex BT Head of Security,
         </elements-team-member>
 
       </div>
@@ -92,7 +95,8 @@
       <div class="block xl:flex items-center">
 
         <elements-team-member name="Andy Bokor" title="Start-up Advisor" photo="andy-bokor.png" linkedin="https://www.linkedin.com/in/andrew-b-913ba98">
-          Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.
+          Cofounder of Trustwave (acquired by Singtel), brings invaluable guidance with deep knowledge of
+          cybersecurity and US markets.
         </elements-team-member>
 
         <div class="h-36 hidden xl:block">
