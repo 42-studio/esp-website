@@ -6,6 +6,28 @@ const observables = ref(null)
 useIntersectionObserver(observables)
 
 const typerArray = ['Procurement...', 'Contracts', 'Inventory...', 'Utilisation...', 'Controls...', 'Incidents...', 'Intel...']
+
+
+let imageIndex = ref(0)
+const images = [
+    new URL('~/assets/img/product/cyberdefense-matrix-dark.png', import.meta.url),
+    new URL('~/assets/img/product/mitre-attack-dark.png', import.meta.url),
+    new URL('~/assets/img/product/capability-dark.png', import.meta.url),
+    new URL('~/assets/img/product/threat-resistance-dark.png', import.meta.url),
+    new URL('~/assets/img/product/product-profile-contracts-dark.png', import.meta.url)]
+
+function changeImage()
+{
+  imageIndex.value ++
+  if (imageIndex.value > images.length - 1)
+  {
+    imageIndex.value = 0
+  }
+  console.log("Image Change: ", imageIndex)
+}
+setInterval(changeImage, 10000)
+
+
 </script>
 
 <template>
@@ -95,7 +117,7 @@ const typerArray = ['Procurement...', 'Contracts', 'Inventory...', 'Utilisation.
 
         <div class="animated fadeInRight delay-4s">
           <div class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
-            <img src="@/assets/img/previews/CapabilityCards.jpg" class="hero-preview" alt="ESProfiler Capability Views" />
+            <img :src="images[imageIndex]" class="hero-preview" alt="ESProfiler Capability Views" />
           </div>
         </div>
 

@@ -34,7 +34,8 @@ useIntersectionObserver(observables)
         </h2>
 
         <p class="m-8 text-lg leading-8 text-slate-300">
-          ESProfiler is a CSIV Platform that empowers security leaders to continually answer five powerful questions and make decisions with confidence.
+          ESProfiler is a CSIV Platform that empowers security leaders to continually answer five powerful questions
+          and make decisions with confidence.
         </p>
 
       </div>
