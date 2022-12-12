@@ -74,15 +74,14 @@ useIntersectionObserver(observables)
     <elements-validation-section class="mt-5 intersection fadeInRight" :icon="ClipboardDocumentCheckIcon" title="What do we own?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        Today's security products are often acquired and used by multiple business units, each with their own processes
-        and systems. This can make it difficult to keep track of what security products your enterprise owns and the
-        cost associated with them.
+        Today's security products are often used by multiple business units, each with their own processes and systems,
+        making it difficult to keep track of what products your enterprise owns and the associated costs.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        ESProfiler solves this problem by embedding into your enterprise procurement process to continually track
-        security-related contracts. Contracts are indexed using an advanced security-aware search and analytics engine,
-        providing a clear view of what products your enterprise owns, when they expire, and how much they cost.
+        ESProfiler solves this problem by embedding into your procurement process to continually track security-related
+        contracts. Our advanced search and analytics engine indexes contracts, providing a clear view of what products
+        your enterprise owns, when they expire, and how much they cost.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
@@ -95,22 +94,19 @@ useIntersectionObserver(observables)
     <elements-validation-section class="intersection fadeInRight" :icon="ClipboardDocumentListIcon" title="What should it do?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        In a market lacking standardization, it is almost impossible to understand what your security products do and
-        quantify their benefits. This can lead to investment overlap and security portfolios that often fail to meet
-        security requirements.
+        In a market lacking standardization, it is difficult to understand what your security products do and quantify
+        their benefits, leading to investment overlap and security portfolios that often fail to meet requirements.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        ESProfiler uses an industry-leading model to quantify what your security products do with feature-level detail
-        against how attackers operate. This is based on industry-recognized frameworks such as MITRE ATT&CK and NIST to
-        operationalise threat-informed strategy in your enterprise.
+        ESProfiler uses an industry-leading model to quantify what your security products do in detail against how
+        attackers operate, based on established frameworks such as MITRE ATT&CK and NIST.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        By combining security controls created by your security teams with capabilities defined by ESProfiler's model,
-        you can gain a comprehensive and actionable understanding of what your security investments should do against
-        the threats your enterprise faces. This allows you to make informed and confident decisions about your security
-        portfolio and ensure that it effectively meets your needs.
+        By combining your security controls with our capabilities, you can gain a comprehensive understanding of what
+        your security investments should do to protect against threats. This enables you to make informed decisions
+        about your security portfolio and ensure that it effectively meets your needs.
       </p>
 
     </elements-validation-section>
@@ -118,19 +114,19 @@ useIntersectionObserver(observables)
     <elements-validation-section class="intersection fadeInRight" :icon="ClipboardDocumentListIcon" title="What is deployed?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        The disconnect between the security capabilities that enterprises acquire and the capabilities they actually
-        deploy leads to hidden waste in budgets and incidents caused by poor security capability utilization.
+        The disconnect between the security capabilities that enterprises acquire and those they actually deploy leads
+        to hidden waste in budgets and incidents caused by poor security capability utilization
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
         ESProfiler relates product features to security capabilities and blends this data with automated usage
-        assertions from product owners. This allows ESProfiler to identify unused products and features
-        with security implications and budget waste.
+        assertions from product owners to identify unused products and features with security implications
+        and budget waste.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        By continually showcasing the difference between acquired and achieved security capabilities, security leaders
-        can get more value from their security assets.
+        By continually showcasing the difference between acquired and achieved security capabilities, security
+        leaders can get more value from their security assets.
       </p>
 
     </elements-validation-section>
@@ -160,23 +156,21 @@ useIntersectionObserver(observables)
     <elements-validation-section class="intersection fadeInRight" :icon="ClipboardDocumentListIcon" title="Is it working & relevant?">
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        As your threat actors evolve, your enterprise faces a continual flow of security incidents.
-        However, without clear definitions of what your security products should do, it can be challenging to understand
-        if your security investment is effective and remains relevant.
+        As your threat actors evolve, your enterprise faces a continual flow of security incidents. Without clear
+        definitions of what your security products should do, it can be challenging to understand if your security
+        investment is effective and remains relevant.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        ESProfiler addresses this problem by combining multiple approaches to determine if your security investments are
-        working and relevant. By integrating into your post-incident review process and breach attack simulations,
-        ESProfiler links the language used to describe an incident to the parts of your investment that should have
-        provided the capabilities to address it. By combining this data with threat intelligence,
-        ESProfiler provides a holistic view of what's working and relevant, enabling continuous guidance for
-        security strategy.
+        ESProfiler addresses this problem by integrating into your post-incident review process and breach attack
+        simulations to link the language used to describe an incident to the parts of your investment that should have
+        provided the relevant capabilities. By combining this data with threat intelligence, we provide a holistic view
+        of what's working and relevant, enabling continuous guidance for your security strategy.
       </p>
 
       <p class="my-8 text-lg leading-8 text-slate-300">
-        By quantifying what your security should be doing in relation to what's happening in your enterprise and
-        the wider industry, ESProfiler enables continuous, threat-driven guidance.
+        By quantifying what your security should be doing in relation to what's happening in your enterprise and the
+        wider industry, ESProfiler enables continuous, threat-driven guidance.
       </p>
 
     </elements-validation-section>
