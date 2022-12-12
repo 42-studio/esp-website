@@ -1,6 +1,6 @@
 <script setup>
 import { BoltSlashIcon, ShieldExclamationIcon, ScaleIcon, WrenchScrewdriverIcon } from '@heroicons/vue/24/outline'
-import { useIntersectionObserver } from '../composables/IntersectionObserver'
+import { useIntersectionObserver } from '~/composables/IntersectionObserver.js'
 
 const observables = ref(null)
 useIntersectionObserver(observables)
@@ -58,7 +58,7 @@ const features = [
 
         <div class="lg:w-1/2">
 
-          <div class="intersection fadeInRight">
+          <div class="intersection fadeInRight text-center sm:text-left">
 
             <div class="inline-block mb-8 mt-2 rounded-full p-2 px-4 text-sm ring-1 ring-slate-300/10 text-slate-200">
               Why?

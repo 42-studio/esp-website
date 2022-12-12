@@ -38,7 +38,7 @@ const typerArray = ['Procurement...', 'Contracts', 'Inventory...', 'Utilisation.
 
     <div class="flex flex-col lg:flex-row">
 
-      <div class="flex flex-col w-2/6 lg:mt-[-40%]">
+      <div class="flex flex-col w-full sm:w-2/6 lg:mt-[-40%]">
 
         <div class="shrink">
 
@@ -46,7 +46,7 @@ const typerArray = ['Procurement...', 'Contracts', 'Inventory...', 'Utilisation.
             It's Time To
           </div>
 
-          <div class=" max-w-2xl animated delay-2s fadeInLeft">
+          <div class="max-w-2xl animated delay-2s fadeInLeft">
 
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
               Revolutionize<br />Security<br />Investment
@@ -95,7 +95,7 @@ const typerArray = ['Procurement...', 'Contracts', 'Inventory...', 'Utilisation.
 
         <div class="animated fadeInRight delay-4s">
           <div class="inline-block rounded ring ring-gray-400 ring-opacity-5 overflow-clip max-h-[65vh] mx-auto my-10 lg:my-[5vh] w-full lg:w-[75vw]" style="max-width: 1900px;">
-            <img src="@/assets/img/previews/CapabilityCards.jpg" class="hero-preview" alt="ESProfiler Capability Views" />
+            <img src="~/assets/img/previews/CapabilityCards.jpg" class="hero-preview" alt="ESProfiler Capability Views" />
           </div>
         </div>
 

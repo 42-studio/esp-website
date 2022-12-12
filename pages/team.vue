@@ -17,7 +17,7 @@
       </div>
 
       <div class="w-full md:w-6/12">
-        <img src="@/assets/img/brain.svg" class="mx-auto md:mr-0 md:pl-10 mt-20 md:mt-0 breath" />
+        <img src="~/assets/img/brain.svg" class="mx-auto md:mr-0 md:pl-10 mt-20 md:mt-0 breath" />
       </div>
 
     </div>
