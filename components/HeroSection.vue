@@ -36,7 +36,6 @@ function changeImage() {
   if (imageIndex.value > images.length - 1) {
     imageIndex.value = 0;
   }
-  console.log("Image Change: ", imageIndex);
 }
 setInterval(changeImage, 10000);
 setTimeout(() => {
