@@ -78,7 +78,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss"], // https://tailwindcss.nuxt.dev/,
+  modules: ["@nuxt/content"], // https://tailwindcss.nuxt.dev/,
   runtimeConfig: {
     public: {
       pes:
@@ -87,8 +87,15 @@ export default defineNuxtConfig({
           : "http://localhost:8991/pes/v1/pub",
     },
   },
-  tailwindcss: {
-    viewer: true,
-    cssPath: "~/assets/css/tailwind.css",
+  // tailwindcss: {
+  //   viewer: true,
+  //   cssPath: "~/assets/css/tailwind.css",
+  // },
+  css: ["~/assets/css/tailwind.css"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
 });

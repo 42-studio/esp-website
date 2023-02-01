@@ -1,7 +1,7 @@
 ---
 # required
-title: "How to Build a Cybersecurity Career"
-description: "Navigating the path to a successful career in Information Security: A comprehensive guide"
+title: "The Importance of Firewall Protection in Cybersecurity"
+description: "Firewalls are the first line of defense for your network. Learn the importance of firewall protection in cybersecurity"
 image: /img/blog/man-with-tablet.jpg
 author: Louis Holt
 dateCreated: 2022/12/20

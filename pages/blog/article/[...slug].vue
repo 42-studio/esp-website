@@ -26,7 +26,7 @@ const { data: author } = await useAsyncData(`content-${path}-author`, () => {
         {{ article.title }}
       </h1>
       <img class="w-full" :src="article.image" alt="Article Heading" />
-      <ContentRenderer :value="article" />
+      <ContentRenderer class="prose prose-slate" :value="article" />
       <!-- </template>
 
         <template v-slot:empty>
