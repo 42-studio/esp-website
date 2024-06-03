@@ -250,7 +250,7 @@ export default {
 
   .wrapper {
     position: relative;
-    max-width: 1920px;
+    max-width: 1450px;
     min-height: calc(100vh - 400px);
     margin: 0 auto;
     display: flex;

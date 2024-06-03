@@ -179,8 +179,9 @@ export default {
       </h1>
 
       <p class="subtitle">
-        ESProfiler empowers security leaders to answer 5 powerful questions &
-        make decisions with confidence.
+        ESProfiler is a CSIV Platform that empowers security leaders to
+        continually answer five powerful questions and make decisions with
+        confidence.
       </p>
 
       <div class="path-container">
@@ -190,16 +191,25 @@ export default {
 
           <div class="text-container">
             <h2 class="title">
-              What do we own?
+              What do you own?
             </h2>
             <p class="subtitle">
-              Today's security products don't just reside in security teams.
-              Multiple business units utilising independent processes and
-              systems make it hard to ascertain what security products an
-              enterprise owns and the actual cost.
+              Today's security products are often used by multiple business
+              units, each with their own processes and systems, making it
+              difficult to keep track of what products your enterprise owns and
+              the associated costs.
             </p>
-            <p>
-              ESPRFOILER
+            <p class="subtitle">
+              ESProfiler solves this problem by embedding into your procurement
+              process to continually track security- related contracts. Our
+              advanced search and analytics engine indexes contracts, providing
+              a clear view of what products your enterprise owns, when they
+              expire, and how much they cost.
+            </p>
+            <p class="subtitle">
+              Fusing contractual data with deep security understanding unlocks
+              immediate financial and inventory insights, empowering C-level
+              strategy.
             </p>
           </div>
         </section>
@@ -211,40 +221,105 @@ export default {
               What should it do?
             </h2>
             <p class="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-              posuere est. Cras consectetur nisi tellus, sed dapibus massa
-              auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus
-              molestie.
+              In a market lacking standardisation, it is difficult to understand
+              what your security products do and quantify their benefits,
+              leading to investment overlap and security portfolios that often
+              fail to meet requirements.
+            </p>
+            <p class="subtitle">
+              ESProfiler uses an industry-leading model to quantify what your
+              security products do in detail against how attackers operate,
+              based on established frameworks such as MITRE ATT&CK® and NIST.
+            </p>
+            <p class="subtitle">
+              By combining your security controls with quantified capabilities,
+              you gain a comprehensive understanding of what your security
+              investments should do to protect against threats. This enables you
+              to optimise your security portfolio and ensure that it effectively
+              meets your needs.
             </p>
           </div>
         </section>
 
         <section class="left">
-          <div ref="circle-4" class="circle" />
+          <div ref="circle-3" class="circle" />
           <div class="text-container">
             <h2 class="title">
-              What is being used?
+              What have you deployed?
             </h2>
             <p class="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-              posuere est. Cras consectetur nisi tellus, sed dapibus massa
-              auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus
-              molestie.
+              The disconnect between the security capabilities that enterprises
+              acquire and those they actually deploy leads to hidden waste in
+              budgets and incidents caused by poor security capability
+              utilisation
+            </p>
+            <p class="subtitle">
+              ESProfiler relates product features to security capabilities and
+              blends this data with automated usage assertions from product
+              owners to identify unused products and features with security
+              implications and budget waste.
+            </p>
+            <p class="subtitle">
+              By continually showcasing the difference between acquired and
+              achieved security capabilities, security leaders get more value
+              from their security assets.
             </p>
           </div>
         </section>
 
         <section class="right">
+          <div ref="circle-4" class="circle" />
+          <div class="text-container">
+            <h2 class="title">
+              Where are you gaps and overlaps?
+            </h2>
+            <p class="subtitle">
+              Identifying gaps in your security and overlap in your investments
+              can be impossible when you don't know what security products you
+              own, what capabilities they provide, and what you have deployed.
+            </p>
+            <p class="subtitle">
+              ESProfiler solves this problem by combining information from each
+              of these questions to create a clear picture of your security
+              products, deployed capabilities, and overall security posture. The
+              analytics and visualisation engine in ESProfiler uses this
+              information to provide actionable insights into your security gaps
+              and investment overlap.
+            </p>
+            <p class="subtitle">
+              With a deep understanding of what's powering your security
+              posture, ESProfiler allows you to model different scenarios of
+              product investment and divestment against threats, unlocking the
+              next level of strategy and spend optimisation.
+            </p>
+          </div>
+        </section>
+
+        <section class="left">
           <div ref="circle-5" class="circle" />
           <div class="text-container">
             <h2 class="title">
-              Is it working effectively?
+              Is it relevant & working?
             </h2>
             <p class="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-              posuere est. Cras consectetur nisi tellus, sed dapibus massa
-              auctor ac. Praesent non dolor leo. Donec eu ante vel eros faucibus
-              molestie.
+              As your threat actors evolve, your enterprise faces a continual
+              flow of security incidents. Without clear definitions of what your
+              security products should do, it can be challenging to understand
+              if your security investment is effective and remains relevant.
+            </p>
+            <p class="subtitle">
+              ESProfiler addresses this problem by integrating into your
+              post-incident review process and breach attack simulations to link
+              the language used to describe an incident to the parts of your
+              investment that should have provided the relevant capabilities. By
+              combining this data with threat intelligence, ESProfiler provides
+              a holistic view of what's working and relevant, enabling
+              continuous guidance and optimisation of your security strategy.
+            </p>
+            <p class="subtitle">
+              By quantifying what your security should be doing in relation to
+              what's happening in your enterprise and the wider industry,
+              ESProfiler enables continuous, threat-driven guidance.
             </p>
           </div>
         </section>
@@ -260,7 +335,7 @@ export default {
   padding: 0 var(--body-padding);
 
   .understand-container {
-    max-width: 1920px;
+    max-width: 1450px;
     margin: 0 auto;
 
     display: flex;
@@ -281,10 +356,10 @@ export default {
     }
 
     .subtitle {
-      max-width: 600px;
+      max-width: 1000px;
       color: rgba(var(--dark-text), 0.6);
 
-      margin-bottom: 8rem;
+      // margin-bottom: 8rem;
 
       span.defined {
         font-weight: bold;
@@ -293,6 +368,7 @@ export default {
     }
 
     .path-container {
+      margin-top: 6rem;
       width: 100%;
       position: relative;
       pointer-events: none;
@@ -310,7 +386,11 @@ export default {
         display: flex;
         justify-content: flex-start;
         gap: 2rem;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
+
+        &:last-child {
+          margin-bottom: 8rem;
+        }
 
         &.left {
           flex-direction: row;
