@@ -12,8 +12,8 @@ jobs:
     - id: Build-Vue
       uses: xRealNeon/VuePagesAction@1.0.1
       with:
-        username: 'joshlucpoll'
+        username: '42-studio'
         reponame: 'esp-website'
-        cname: 'esp.joshlucpoll.dev'
+        cname: 'esp-dev.42.studio'
         useyarn: true
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
